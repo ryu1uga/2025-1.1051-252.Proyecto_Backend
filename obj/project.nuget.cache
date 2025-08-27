@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GMW4mcsam2Y=",
+  "dgSpecHash": "/KC3qSuNnUs=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ITLAB\\Downloads\\2025-1.1051-252.Proyecto_Backend\\Loop.csproj",
+  "projectFilePath": "C:\\Users\\ITLAB\\Documents\\GitHub\\2025-1.1051-252.Proyecto_Backend\\Loop.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ITLAB\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\ITLAB\\.nuget\\packages\\cloudinarydotnet\\1.14.0\\cloudinarydotnet.1.14.0.nupkg.sha512",

@@ -6282,11 +6282,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ITLAB\\Downloads\\2025-1.1051-252.Proyecto_Backend\\Loop.csproj",
+      "projectUniqueName": "C:\\Users\\ITLAB\\Documents\\GitHub\\2025-1.1051-252.Proyecto_Backend\\Loop.csproj",
       "projectName": "Loop",
-      "projectPath": "C:\\Users\\ITLAB\\Downloads\\2025-1.1051-252.Proyecto_Backend\\Loop.csproj",
+      "projectPath": "C:\\Users\\ITLAB\\Documents\\GitHub\\2025-1.1051-252.Proyecto_Backend\\Loop.csproj",
       "packagesPath": "C:\\Users\\ITLAB\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ITLAB\\Downloads\\2025-1.1051-252.Proyecto_Backend\\obj\\",
+      "outputPath": "C:\\Users\\ITLAB\\Documents\\GitHub\\2025-1.1051-252.Proyecto_Backend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ITLAB\\AppData\\Roaming\\NuGet\\NuGet.Config"
