@@ -2,14 +2,16 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Loop.Models.Common
 {
-    [Table("User")]
-    public class User
+    [Table("Product")]
+    public class Product
     {
         public Guid Id { get; set; } = Guid.NewGuid();
+        public Guid BusinessId { get; set; }
+        public Guid CategoryId { get; set; }
         public string Name { get; set; } = "";
-        public string Email { get; set; } = "";
-        public string Password { get; set; } = "";
-        public int UserType { get; set; }; = 0; //0 si es cliente, 1 si es admin
+        public string Description { get; set; } = "";
+        public int Status { get; set; }; = 0;
+        public float Price { get; set; }; = 0;
         public DateTime CreatedAt { get; set; };
         public DateTime UpdatedAt { get; set; };
     }
