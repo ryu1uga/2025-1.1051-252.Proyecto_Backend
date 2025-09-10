@@ -12,5 +12,9 @@ namespace Loop.Models.Common
         public int UserType { get; set; }; = 0; //0 si es cliente, 1 si es admin
         public DateTime CreatedAt { get; set; };
         public DateTime UpdatedAt { get; set; };
+
+        public Customer? Customer { get; set; }
+
+        public ICollection<BusinessMember>? BusinessMembers { get; set; }
     }
 }

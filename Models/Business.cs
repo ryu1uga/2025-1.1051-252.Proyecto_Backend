@@ -11,5 +11,10 @@ namespace Loop.Models.Common
         public int State { get; set; }; = 0;
         public DateTime CreatedAt { get; set; };
         public DateTime UpdatedAt { get; set; };
+
+        public ICollection<BusinessMember>? BusinessMembers { get; set; }
+        public ICollection<OrderItem>? OrderItems { get; set; }
+        public ICollection<Payout>? Payouts { get; set; }
+        public ICollection<Product>? Products { get; set; }
     }
 }

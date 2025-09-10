@@ -14,5 +14,11 @@ namespace Loop.Models.Common
         public int ShippingStatus { get; set; }; = 0;
         public DateTime CreatedAt { get; set; };
         public DateTime UpdatedAt { get; set; };
+
+        public Customer? Customer { get; set; }
+        public Address? Address { get; set; }
+
+        public ICollection<OrderItem>? OrderItems { get; set; }
+        public ICollection<Payment>? Payments { get; set; }
     }
 }

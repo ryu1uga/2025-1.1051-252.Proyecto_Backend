@@ -1,8 +1,7 @@
 namespace Loop.DTOs.Common
 {
-    public class UserDTO
+    public class CategoryDTO
     {
         public string Name { get; set; } = "";
-        public string Email { get; set; } = "";
     }
 }

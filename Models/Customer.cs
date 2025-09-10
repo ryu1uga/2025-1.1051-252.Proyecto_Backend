@@ -9,5 +9,13 @@ namespace Loop.Models.Common
         public Guid UserId { get; set; }
         public DateTime CreatedAt { get; set; };
         public DateTime UpdatedAt { get; set; };
+
+        public Cart? Cart { get; set; }
+        public User? User { get; set; }
+
+        public ICollection<Address>? Addresses { get; set; }
+        public ICollection<Favorite>? Favorites { get; set; }
+        public ICollection<Order>? Order { get; set; }
+        public ICollection<Review>? Reviews { get; set; }
     }
 }

@@ -9,5 +9,9 @@ namespace Loop.Models.Common
         public Guid CustomerId { get; set; }
         public DateTime CreatedAt { get; set; };
         public DateTime UpdatedAt { get; set; };
+
+        public Customer? Customer { get; set; }
+
+        public ICollection<CartItem>? CartItems { get; set; }
     }
 }

@@ -14,5 +14,16 @@ namespace Loop.Models.Common
         public float Price { get; set; }; = 0;
         public DateTime CreatedAt { get; set; };
         public DateTime UpdatedAt { get; set; };
+
+        public Business? Business { get; set; }
+        public Category? Category { get; set; }
+
+        public ICollection<CartItem>? CartItems { get; set; }
+        public ICollection<Favorite>? Favorites { get; set; }
+        public ICollection<Inventory>? Inventories { get; set; }
+        public ICollection<OrderItem>? OrderItems { get; set; }
+        public ICollection<ProductImage>? ProductImages { get; set; }
+        public ICollection<ProductTag>? ProductTags { get; set; }
+        public ICollection<Review>? Reviews { get; set; }
     }
 }
