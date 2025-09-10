@@ -9,9 +9,9 @@ namespace Loop.Models.Common
         public string Name { get; set; } = "";
         public string Email { get; set; } = "";
         public string Password { get; set; } = "";
-        public int UserType { get; set; }; = 0; //0 si es cliente, 1 si es admin
-        public DateTime CreatedAt { get; set; };
-        public DateTime UpdatedAt { get; set; };
+        public int UserType { get; set; } = 0; //0 si es cliente, 1 si es admin
+        public DateTime CreatedAt { get; set; }
+        public DateTime UpdatedAt { get; set; }
 
         public Customer? Customer { get; set; }
 

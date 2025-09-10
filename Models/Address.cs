@@ -13,11 +13,11 @@ namespace Loop.Models.Common
         public string Region { get; set; } = "";
         public string PostalCode { get; set; } = "";
         public string Country { get; set; } = "";
-        public DateTime CreatedAt { get; set; };
-        public DateTime UpdatedAt { get; set; };
+        public DateTime CreatedAt { get; set; }
+        public DateTime UpdatedAt { get; set; }
 
         public Customer? Customer { get; set; }
 
-        public ICollection<Order>? Order { get; set; }
+        public ICollection<Order>? Orders { get; set; }
     }
 }

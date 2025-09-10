@@ -8,9 +8,9 @@ namespace Loop.Models.Common
         public Guid Id { get; set; } = Guid.NewGuid();
         public string Name { get; set; } = "";
         public string TaxId { get; set; } = "";
-        public int State { get; set; }; = 0;
-        public DateTime CreatedAt { get; set; };
-        public DateTime UpdatedAt { get; set; };
+        public int State { get; set; } = 0;
+        public DateTime CreatedAt { get; set; }
+        public DateTime UpdatedAt { get; set; }
 
         public ICollection<BusinessMember>? BusinessMembers { get; set; }
         public ICollection<OrderItem>? OrderItems { get; set; }

@@ -10,10 +10,10 @@ namespace Loop.Models.Common
         public Guid CategoryId { get; set; }
         public string Name { get; set; } = "";
         public string Description { get; set; } = "";
-        public int Status { get; set; }; = 0;
-        public float Price { get; set; }; = 0;
-        public DateTime CreatedAt { get; set; };
-        public DateTime UpdatedAt { get; set; };
+        public int Status { get; set; } = 0;
+        public float Price { get; set; } = 0;
+        public DateTime CreatedAt { get; set; }
+        public DateTime UpdatedAt { get; set; }
 
         public Business? Business { get; set; }
         public Category? Category { get; set; }

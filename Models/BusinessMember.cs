@@ -9,8 +9,8 @@ namespace Loop.Models.Common
         public Guid UserId { get; set; }
         public Guid BusinessId { get; set; }
         public string Role { get; set; } = "";
-        public DateTime CreatedAt { get; set; };
-        public DateTime UpdatedAt { get; set; };
+        public DateTime CreatedAt { get; set; }
+        public DateTime UpdatedAt { get; set; }
 
         public User? User { get; set; }
         public Business? Business { get; set; }
