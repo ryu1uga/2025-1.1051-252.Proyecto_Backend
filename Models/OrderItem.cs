@@ -10,7 +10,7 @@ namespace Loop.Models.Common
         public Guid BusinessId { get; set; }
         public Guid ProductId { get; set; }
         public int Quantity { get; set; } = 0;
-        public int Price { get; set; } = 0;
+        public float Price { get; set; } = 0;
         public int PaymentStatus { get; set; } = 0;
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }

@@ -9,7 +9,7 @@ namespace Loop.Models.Common
         public Guid OrderId { get; set; }
         public string Provider { get; set; } = "";
         public string ProviderRef { get; set; } = "";
-        public int Amount { get; set; } = 0;
+        public float Amount { get; set; } = 0;
         public int Status { get; set; } = 0;
         public DateTime PaidAt { get; set; }
         public DateTime CreatedAt { get; set; }

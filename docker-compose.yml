@@ -3,10 +3,10 @@ services:
     image: postgres
     environment:
       POSTGRES_USER: loop
-      POSTGRES_PASSWORD: itlab
+      POSTGRES_PASSWORD: loopadmin
       POSTGRES_DB: loop_db
     ports:
-      - "5432:5432"
+      - "5430:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
     command: ["postgres", "-c", "shared_preload_libraries=uuid-ossp"]
@@ -22,7 +22,7 @@ services:
     env_file:
       - .env
     environment:
-      ConnectionStrings__DefaultConnection: "Host=db;Database=loop_db;Username=postgres;Password=postgres"
+      ConnectionStrings__DefaultConnection: "Host=db;Database=loop_db;Username=loop;Password=loopadmin"
 
 volumes:
   postgres_data:
