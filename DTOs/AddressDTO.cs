@@ -2,6 +2,7 @@ namespace Loop.DTOs.Common
 {
     public class AddressDTO
     {
+        public Guid CustomerId { get; set; }
         public string Line1 { get; set; } = "";
         public string Line2 { get; set; } = "";
         public string City { get; set; } = "";

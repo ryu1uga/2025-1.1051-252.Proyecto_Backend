@@ -2,6 +2,7 @@ namespace Loop.DTOs.Common
 {
     public class ProductDTO
     {
+        public Guid BusinessId { get; set; }
         public Guid CategoryId { get; set; }
         public string Name { get; set; } = "";
         public string Description { get; set; } = "";

@@ -10,12 +10,12 @@ namespace Loop.Controller
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class UsersController : ControllerBase
+    public class UserController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
         private readonly EmailService _emailService;
 
-        public UsersController(ApplicationDbContext context, EmailService emailService)
+        public UserController(ApplicationDbContext context, EmailService emailService)
         {
             _context = context;
             _emailService = emailService;

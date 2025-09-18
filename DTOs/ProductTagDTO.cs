@@ -1,8 +1,8 @@
 namespace Loop.DTOs.Common
 {
-    public class InventoryDTO
+    public class ProductTagDTO
     {
         public Guid ProductId { get; set; }
-        public int Quantity { get; set; } = 0;
+        public Guid TagId { get; set; }
     }
 }

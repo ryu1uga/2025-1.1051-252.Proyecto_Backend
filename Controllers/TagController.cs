@@ -10,11 +10,11 @@ namespace Loop.Controller
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class TagsController : ControllerBase
+    public class TagController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
 
-        public TagsController(ApplicationDbContext context)
+        public TagController(ApplicationDbContext context)
         {
             _context = context;
         }
