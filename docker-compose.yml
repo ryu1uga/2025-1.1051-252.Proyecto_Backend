@@ -1,6 +1,8 @@
+version: "3.9"
+
 services:
   db:
-    image: postgres
+    image: postgres:15
     environment:
       POSTGRES_USER: loop
       POSTGRES_PASSWORD: loopadmin
@@ -24,5 +26,33 @@ services:
     environment:
       ConnectionStrings__DefaultConnection: "Host=db;Database=loop_db;Username=loop;Password=loopadmin"
 
+  probe:
+    build:
+      context: ./probe
+      dockerfile: Dockerfile
+    environment:
+      TARGET_URL: "http://web:80/api/messages/ping"
+      INTERVAL: "1.0"   # segundos entre pings
+      LOG_PATH: "/data/probe_events.log"
+      PROBE_ID: "probe-1"
+    volumes:
+      - probe_data:/data
+    depends_on:
+      - web
+
+  analyzer:
+    build:
+      context: ./analyzer
+      dockerfile: Dockerfile
+    environment:
+      LOG_PATH: "/data/probe_events.log"
+      WINDOW: "100"     # tamaño de ventana para calcular media y desviación
+      Z_THRESH: "4.0"   # umbral z-score para alerta
+    volumes:
+      - probe_data:/data
+    depends_on:
+      - probe
+
 volumes:
   postgres_data:
+  probe_data:
