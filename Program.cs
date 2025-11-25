@@ -86,12 +86,16 @@ builder.Services.AddControllers().AddJsonOptions(x =>
     x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
 
 // PostgreSQL con EF Core
+var connStr = Environment.GetEnvironmentVariable("CONNECTION_STRING");
+if (string.IsNullOrEmpty(connStr))
+{
+    Log.Error("No se encontró CONNECTION_STRING en las variables de entorno.");
+}
+
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseNpgsql(
-        builder.Configuration.GetConnectionString(Environment.GetEnvironmentVariable("CONNECTION_STRING"))
-    )
-    .EnableSensitiveDataLogging()
-    .LogTo(Console.WriteLine)
+    options.UseNpgsql(connStr)
+           .EnableSensitiveDataLogging()
+           .LogTo(Console.WriteLine)
 );
 
 // 🔐 JWT
