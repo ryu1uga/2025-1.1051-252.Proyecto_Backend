@@ -126,31 +126,18 @@ namespace Loop.Controller
             });
         }
 
-        // DELETE: api/ProductImages
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteProductImage(Guid id)
         {
-            var productImage = await _context.ProductImages
-                .FirstOrDefaultAsync(pi => pi.Id == id);
+            var productImage = await _context.ProductImages.FindAsync(id);
 
             if (productImage == null)
-            {
-                return NotFound(new
-                {
-                    success = false,
-                    data = "Imagen de producto no encontrado."
-                });
-            }
+                return NotFound(new { success = false, data = "Imagen de producto no encontrado." });
 
-            // Eliminar imagen de producto
             _context.ProductImages.Remove(productImage);
             await _context.SaveChangesAsync();
 
-            return Ok(new
-            {
-                success = true,
-                data = "Imagen de producto eliminado correctamente."
-            });
+            return Ok(new { success = true, data = "Imagen de producto eliminado correctamente." });
         }
     }
 }

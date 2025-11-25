@@ -1,2 +1,8 @@
-GET https://loop-backend-render.onrender.com/api/Product
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI3NjA3NDhhYi0zYmY5LTQxNGItYjI1YS05Yzk3NjY3NDlhODgiLCJ1bmlxdWVfbmFtZSI6IlVzdWFyaW8gRmlyZWJhc2UiLCJlbWFpbCI6InRlc3QxMjNAZW1haWwuY29tIiwibmJmIjoxNzY0MDk3MzU5LCJleHAiOjE3NjQxMTUzNTksImlhdCI6MTc2NDA5NzM1OX0.rHT3suuTRuDKj02KhTCMfNmyBhohtYVpPblRRX9AZuQ}
+POST https://two025-1-1051-252-proyecto-backend.onrender.com/api/ProductImage
+Content-Type: application/json
+
+{
+  "productId": "a6a54e56-7c0a-4628-bb99-21b20b41c50b",
+  "url": "https://example.com/imagen.jpg",
+  "order": 1
+}
