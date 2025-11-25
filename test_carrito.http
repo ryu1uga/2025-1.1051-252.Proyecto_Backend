@@ -1,0 +1,14 @@
+@baseUrl = https://loop-backend-render.onrender.com
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI3NjA3NDhhYi0zYmY5LTQxNGItYjI1YS05Yzk3NjY3NDlhODgiLCJ1bmlxdWVfbmFtZSI6IlVzdWFyaW8gRmlyZWJhc2UiLCJlbWFpbCI6InRlc3QxMjNAZW1haWwuY29tIiwibmJmIjoxNzY0MTA1MTY0LCJleHAiOjE3NjQxMjMxNjQsImlhdCI6MTc2NDEwNTE2NH0.mmgfVZYFDUlNu_cnT5rKCBkOZO3O27Dtg8XqVo-Li4A
+
+### Agregar item al carrito
+POST {{baseUrl}}/api/Cart/add-item
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "customerId": "e1d4c2b9-7a32-4e00-8f6a-4c28f731e84b",
+  "productId": "6d5c4b3a-2a1b-3c4d-5e6f-7a8b9c0d1e2f",
+  "quantity": 2,
+  "price": 19.99
+}

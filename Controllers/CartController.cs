@@ -5,9 +5,6 @@ using Loop.Data;
 using Loop.DTOs.Common;
 using Loop.Models.Common;
 using Loop.Services;
-using System.Net.Http;
-using System.Net.Http.Headers;
-using System.Net.Http.Json;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -19,12 +16,10 @@ namespace Loop.Controller
     public class CartController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
-        private readonly IHttpClientFactory _httpClientFactory;
 
-        public CartController(ApplicationDbContext context, IHttpClientFactory httpClientFactory)
+        public CartController(ApplicationDbContext context)
         {
             _context = context;
-            _httpClientFactory = httpClientFactory;
         }
 
         // GET: api/Carts
@@ -109,13 +104,12 @@ namespace Loop.Controller
                 });
             }
 
-            var product = await FetchProductAsync(request.ProductId);
-            if (product == null)
+            if (request.Price <= 0)
             {
-                return NotFound(new
+                return BadRequest(new
                 {
                     success = false,
-                    data = "Producto no encontrado en ProductService."
+                    data = "Price debe ser mayor a cero."
                 });
             }
 
@@ -145,9 +139,9 @@ namespace Loop.Controller
             {
                 Id = Guid.NewGuid(),
                 CartId = cart.Id,
-                ProductId = product.Id,
+                ProductId = request.ProductId,
                 Quantity = request.Quantity,
-                Price = product.Price,
+                Price = request.Price,
                 CreatedAt = DateTime.UtcNow,
                 UpdatedAt = DateTime.UtcNow
             };
@@ -164,37 +158,11 @@ namespace Loop.Controller
                     cartItemId = cartItem.Id,
                     product = new
                     {
-                        product.Id,
-                        product.Price
+                        Id = request.ProductId,
+                        Price = request.Price
                     }
                 }
             });
-        }
-
-        private async Task<ProductData?> FetchProductAsync(Guid productId)
-        {
-            var client = _httpClientFactory.CreateClient("ProductService");
-            using var httpRequest = new HttpRequestMessage(HttpMethod.Get, $"api/Product/{productId}");
-
-            var authHeader = Request.Headers["Authorization"].FirstOrDefault();
-            if (!string.IsNullOrWhiteSpace(authHeader))
-            {
-                httpRequest.Headers.Authorization = AuthenticationHeaderValue.Parse(authHeader);
-            }
-
-            var response = await client.SendAsync(httpRequest);
-            if (!response.IsSuccessStatusCode)
-            {
-                return null;
-            }
-
-            var payload = await response.Content.ReadFromJsonAsync<ProductApiResponse>();
-            if (payload == null || payload.success != true || payload.data == null)
-            {
-                return null;
-            }
-
-            return payload.data;
         }
 
         // DELETE: api/Carts
