@@ -10,17 +10,19 @@ using Loop.Services;
 using FirebaseAdmin;
 using Google.Apis.Auth.OAuth2;
 
-// Cargar variables de entorno
+// Cargar variables de entorno locales (solo en desarrollo)
 DotNetEnv.Env.Load();
 if (File.Exists(".secrets.env"))
 {
     DotNetEnv.Env.Load(".secrets.env");
 }
 
-// 📁 Configurar ruta del log
-var logFilePath = Path.Combine(AppContext.BaseDirectory, "Logs", "login-audit-.log");
+// Configurar ruta y carpeta de logs (Render usa filesystem efímero)
+var logDirectory = Path.Combine(AppContext.BaseDirectory, "Logs");
+Directory.CreateDirectory(logDirectory);
+var logFilePath = Path.Combine(logDirectory, "login-audit-.log");
 
-// 🪵 Configurar Serilog
+// Configurar Serilog
 Log.Logger = new LoggerConfiguration()
     .MinimumLevel.Information()
     .Enrich.FromLogContext()
@@ -34,7 +36,7 @@ Log.Logger = new LoggerConfiguration()
 
 var builder = WebApplication.CreateBuilder(args);
 
-// 🔥 Inicializar Firebase usando SOLO UNA variable de entorno
+// Inicializar Firebase con GOOGLE_APPLICATION_CREDENTIALS_JSON
 try
 {
     var jsonCredentials = Environment.GetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS_JSON");
@@ -47,7 +49,7 @@ try
     {
         if (FirebaseApp.DefaultInstance == null)
         {
-            FirebaseApp.Create(new AppOptions()
+            FirebaseApp.Create(new AppOptions
             {
                 Credential = GoogleCredential.FromJson(jsonCredentials)
             });
@@ -61,7 +63,7 @@ catch (Exception ex)
     Log.Error(ex, "Error al inicializar Firebase Admin SDK.");
 }
 
-// 🪵 Usar Serilog
+// Usar Serilog
 builder.Host.UseSerilog();
 
 // Configurar Kestrel para Render
@@ -84,27 +86,26 @@ builder.Services.AddControllers().AddJsonOptions(x =>
     x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
 
 // PostgreSQL con EF Core
-// **CORRECCIÓN APLICADA:** Usa el sistema de configuración de ASP.NET Core
-var connStr = Environment.GetEnvironmentVariable("CONNECTION_STRING");
+// Se prioriza la variable de entorno CONNECTION_STRING (cadena completa o nombre de cadena del config)
+var connStrEnv = Environment.GetEnvironmentVariable("CONNECTION_STRING");
+var connStr = string.IsNullOrWhiteSpace(connStrEnv)
+    ? builder.Configuration.GetConnectionString("DefaultConnection")
+    : connStrEnv.Contains("Host=", StringComparison.OrdinalIgnoreCase) || connStrEnv.Contains("://", StringComparison.OrdinalIgnoreCase)
+        ? connStrEnv
+        : builder.Configuration.GetConnectionString(connStrEnv);
 
-if (string.IsNullOrEmpty(connStr))
+if (string.IsNullOrWhiteSpace(connStr))
 {
-    // 2. Si la variable simple no existe, recurrir al sistema de configuración (appsettings.json o Docker Compose)
-    connStr = builder.Configuration.GetConnectionString("DefaultConnection");
+    Log.Error("No se encontró la cadena de conexión para 'DefaultConnection' ni se pudo resolver 'CONNECTION_STRING'.");
 }
 
-if (string.IsNullOrEmpty(connStr)) 
-{ 
-    Log.Error("No se encontró la cadena de conexión 'DefaultConnection' ni 'CONNECTION_STRING'."); 
-}
-
-// Asegurar el uso de connStr! para evitar advertencias de nulabilidad
-builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseNpgsql(connStr!) 
+builder.Services.AddDbContext<ApplicationDbContext>(options => options
+           .UseNpgsql(connStr!)
            .EnableSensitiveDataLogging()
            .LogTo(Console.WriteLine)
 );
 
-// 🔐 JWT
+// JWT
 var key = Encoding.ASCII.GetBytes(builder.Configuration["Jwt:Key"]);
 builder.Services.AddAuthentication(options =>
 {
@@ -125,7 +126,7 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
-// 🔹 Swagger
+// Swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
@@ -165,7 +166,15 @@ builder.Services.AddTransient<EmailService>();
 // Product Service HTTP Client
 builder.Services.AddHttpClient("ProductService", client =>
 {
-    client.BaseAddress = new Uri(builder.Configuration["PRODUCT_SERVICE_URL"]!);
+    var productServiceUrl = builder.Configuration["PRODUCT_SERVICE_URL"];
+    if (string.IsNullOrWhiteSpace(productServiceUrl))
+    {
+        Log.Warning("No se configuró PRODUCT_SERVICE_URL; el HttpClient 'ProductService' no tendrá BaseAddress.");
+    }
+    else
+    {
+        client.BaseAddress = new Uri(productServiceUrl);
+    }
 });
 
 var app = builder.Build();

@@ -1,9 +1,7 @@
 # Use the official ASP.NET Core runtime as a parent image
 FROM mcr.microsoft.com/dotnet/aspnet:7.0 AS base
 WORKDIR /app
-EXPOSE $PORT
-
-#ENV ASPNETCORE_HTTP_PORTS 8080
+EXPOSE 8080
 
 # Use the SDK image for building the app
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build

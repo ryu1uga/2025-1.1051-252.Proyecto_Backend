@@ -7,13 +7,15 @@ using Microsoft.OpenApi.Models;
 using Serilog;
 using Loop.Data;
 
-// Cargar variables de entorno
+// Cargar variables de entorno locales (solo en desarrollo)
 DotNetEnv.Env.Load();
 
-// 📁 Configurar ruta del log
-var logFilePath = Path.Combine(AppContext.BaseDirectory, "Logs", "login-audit-.log");
+// Configurar ruta y carpeta de logs (Render usa filesystem efímero)
+var logDirectory = Path.Combine(AppContext.BaseDirectory, "Logs");
+Directory.CreateDirectory(logDirectory);
+var logFilePath = Path.Combine(logDirectory, "login-audit-.log");
 
-// 🪵 Configurar Serilog
+// Configurar Serilog
 Log.Logger = new LoggerConfiguration()
     .MinimumLevel.Information()
     .Enrich.FromLogContext()
@@ -27,16 +29,16 @@ Log.Logger = new LoggerConfiguration()
 
 var builder = WebApplication.CreateBuilder(args);
 
-// 🪵 Usar Serilog como proveedor de logging
+// Usar Serilog como proveedor de logging
 builder.Host.UseSerilog();
 
-// Configurar Kestrel para Docker
+// Configurar Kestrel para Render/Docker
 builder.WebHost.ConfigureKestrel(options =>
 {
-    options.ListenAnyIP(int.Parse(Environment.GetEnvironmentVariable("PORT") ?? "8080")); // escucha en todas las IPs
+    options.ListenAnyIP(int.Parse(Environment.GetEnvironmentVariable("PORT") ?? "8080"));
 });
 
-// CORS: permitir cualquier origen, header y método (para desarrollo)
+// CORS
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowSpecificOrigin",
@@ -45,21 +47,32 @@ builder.Services.AddCors(options =>
                         .AllowAnyMethod());
 });
 
-// Configurar Controllers y evitar ciclos de referencia JSON
+// Controllers
 builder.Services.AddControllers().AddJsonOptions(x =>
     x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
 
-// Configurar PostgreSQL con EF Core
-builder.Services.AddDbContext<ProductDbContext>(options =>
-    options.UseNpgsql(
-        builder.Configuration.GetConnectionString(Environment.GetEnvironmentVariable("CONNECTION_STRING_PRODUCTS"))
-    )
-    .EnableSensitiveDataLogging() // logs detallados para debugging
+// PostgreSQL con EF Core (productos)
+// Se prioriza CONNECTION_STRING_PRODUCTS (cadena completa o nombre de cadena del config)
+var productConnEnv = Environment.GetEnvironmentVariable("CONNECTION_STRING_PRODUCTS");
+var productConn = string.IsNullOrWhiteSpace(productConnEnv)
+    ? builder.Configuration.GetConnectionString("ProductConnection")
+    : productConnEnv.Contains("Host=", StringComparison.OrdinalIgnoreCase) || productConnEnv.Contains("://", StringComparison.OrdinalIgnoreCase)
+        ? productConnEnv
+        : builder.Configuration.GetConnectionString(productConnEnv);
+
+if (string.IsNullOrWhiteSpace(productConn))
+{
+    Log.Error("No se encontró la cadena de conexión para 'ProductConnection' ni se pudo resolver 'CONNECTION_STRING_PRODUCTS'.");
+}
+
+builder.Services.AddDbContext<ProductDbContext>(options => options
+    .UseNpgsql(productConn!)
+    .EnableSensitiveDataLogging()
     .LogTo(Console.WriteLine)
 );
 
-// 🔐 Configurar JWT Authentication
-var key = Encoding.ASCII.GetBytes(builder.Configuration["Jwt:Key"]); // Lee la clave compartida
+// JWT Authentication
+var key = Encoding.ASCII.GetBytes(builder.Configuration["Jwt:Key"]);
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -67,18 +80,17 @@ builder.Services.AddAuthentication(options =>
 })
 .AddJwtBearer(options =>
 {
-    // ...
     options.TokenValidationParameters = new TokenValidationParameters
     {
         ValidateIssuerSigningKey = true,
-        IssuerSigningKey = new SymmetricSecurityKey(key), // Usa la clave compartida
+        IssuerSigningKey = new SymmetricSecurityKey(key),
         ValidateIssuer = false,
         ValidateAudience = false,
         ClockSkew = TimeSpan.Zero
     };
 });
 
-// 🔹 Configurar Swagger con JWT
+// Swagger con JWT
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
@@ -112,13 +124,20 @@ builder.Services.AddSwaggerGen(c =>
 
 builder.Services.AddHttpClient("ProductService", client =>
 {
-    // client.BaseAddress usará la variable PRODUCT_SERVICE_URL definida en docker-compose
-    client.BaseAddress = new Uri(builder.Configuration["PRODUCT_SERVICE_URL"]!);
+    var productServiceUrl = builder.Configuration["PRODUCT_SERVICE_URL"];
+    if (string.IsNullOrWhiteSpace(productServiceUrl))
+    {
+        Log.Warning("No se configuró PRODUCT_SERVICE_URL; el HttpClient 'ProductService' no tendrá BaseAddress.");
+    }
+    else
+    {
+        client.BaseAddress = new Uri(productServiceUrl);
+    }
 });
 
 var app = builder.Build();
 
-// Configurar URL (para Docker)
+// APP URL (Docker/Render)
 var appUrl = Environment.GetEnvironmentVariable("APP_URL");
 if (!string.IsNullOrEmpty(appUrl))
 {
@@ -132,19 +151,15 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI(options =>
     {
         options.SwaggerEndpoint("/swagger/v1/swagger.json", "Loop API v1");
-        options.RoutePrefix = string.Empty; // Swagger en /
+        options.RoutePrefix = string.Empty;
     });
 }
 
-// CORS
 app.UseCors("AllowSpecificOrigin");
 
-// Autenticación / Autorización
 app.UseAuthentication();
 app.UseAuthorization();
 
-// Mapear Controllers
 app.MapControllers();
 
-// Ejecutar aplicación
 app.Run();
