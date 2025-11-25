@@ -91,6 +91,64 @@
                 });
             }
 
+            [HttpGet("search")]
+            public async Task<IActionResult> SearchProducts(
+                [FromQuery] string? name,
+                [FromQuery] Guid? categoryId,
+                [FromQuery] Guid? businessId,
+                [FromQuery] int? status,
+                [FromQuery] float? minPrice,
+                [FromQuery] float? maxPrice
+            )
+            {
+                var query = _context.Products
+                    .Include(p => p.ProductImages)
+                    .AsQueryable();
+
+                // Filtros opcionales
+                if (!string.IsNullOrWhiteSpace(name))
+                    query = query.Where(p => p.Name.ToLower().Contains(name.ToLower()));
+
+                if (categoryId.HasValue)
+                    query = query.Where(p => p.CategoryId == categoryId.Value);
+
+                if (businessId.HasValue)
+                    query = query.Where(p => p.BusinessId == businessId.Value);
+
+                if (status.HasValue)
+                    query = query.Where(p => p.Status == status.Value);
+
+                if (minPrice.HasValue)
+                    query = query.Where(p => p.Price >= minPrice.Value);
+
+                if (maxPrice.HasValue)
+                    query = query.Where(p => p.Price <= maxPrice.Value);
+
+                var products = await query
+                    .Select(p => new
+                    {
+                        p.Id,
+                        p.BusinessId,
+                        p.CategoryId,
+                        p.Description,
+                        p.Status,
+                        p.Price,
+                        Images = p.ProductImages.Select(img => new
+                        {
+                            img.Id,
+                            img.Url,
+                            img.Order
+                        }).ToList()
+                    })
+                    .ToListAsync();
+
+                return Ok(new
+                {
+                    success = true,
+                    data = products
+                });
+            }
+
             // POST: api/Products
             [HttpPost]
             public async Task<IActionResult> CreateProduct([FromBody] ProductDTO productDTO)
