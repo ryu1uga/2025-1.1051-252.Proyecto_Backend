@@ -1,4 +1,4 @@
-POST https://loop-backend-render.onrender.com/api/User/firebase-auth
+POST https://localhost:8000/api/User/firebase-auth
 Content-Type: application/json
 
 {
