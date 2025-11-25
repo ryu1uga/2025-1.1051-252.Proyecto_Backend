@@ -84,15 +84,12 @@ builder.Services.AddControllers().AddJsonOptions(x =>
     x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
 
 // PostgreSQL con EF Core
-var connStr = Environment.GetEnvironmentVariable("CONNECTION_STRING");
+// **CORRECCIÓN APLICADA:** Usa el sistema de configuración de ASP.NET Core
+var connStr = builder.Configuration.GetConnectionString("DefaultConnection");
 
-if (string.IsNullOrEmpty(connStr))
-{
-    Log.Error("No se encontró la variable CONNECTION_STRING");
-}
+if (string.IsNullOrEmpty(connStr)) { Log.Error("No se encontró la cadena de conexión 'DefaultConnection' en la configuración."); }
 
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseNpgsql(connStr)
+builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseNpgsql(connStr!)
            .EnableSensitiveDataLogging()
            .LogTo(Console.WriteLine)
 );
