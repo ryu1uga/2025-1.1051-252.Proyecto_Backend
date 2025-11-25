@@ -15,7 +15,7 @@ services:
       context: ./ProductService 
       dockerfile: Dockerfile 
     ports:
-      - "8001:80" # Nuevo puerto para este servicio
+      - "8080:80" # Nuevo puerto para este servicio
     environment:
       # Usar la variable de contraseña para la DB del producto
       ConnectionStrings__ProductConnection: "Host=dpg-d4in8hh5pdvs738423b0-a.oregon-postgres.render.com;Database=loop_db_products;Username=loop;Password=pUCV1znJnEsjYddxYOHmx8uhnlvNVCUo"

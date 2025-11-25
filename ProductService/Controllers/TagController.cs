@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 namespace Loop.Controller
 {
     [ApiController]
-    [Route("api/tags")]
+    [Route("api/[controller]")]
     [Authorize]
     public class TagController : ControllerBase
     {
@@ -121,7 +121,7 @@ namespace Loop.Controller
         }
 
         // DELETE: api/Tags
-        [HttpDelete("{id}")]
+        [HttpDelete]
         public async Task<IActionResult> DeleteTag(Guid id)
         {
             var tag = await _context.Tags

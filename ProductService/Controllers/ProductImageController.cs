@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 namespace Loop.Controller
 {
     [ApiController]
-    [Route("api/product-images")]
+    [Route("api/[controller]")]
     [Authorize]
     public class ProductImageController : ControllerBase
     {
@@ -128,7 +128,7 @@ namespace Loop.Controller
         }
 
         // DELETE: api/ProductImages
-        [HttpDelete("{id}")]
+        [HttpDelete]
         public async Task<IActionResult> DeleteProductImage(Guid id)
         {
             var productImage = await _context.ProductImages
