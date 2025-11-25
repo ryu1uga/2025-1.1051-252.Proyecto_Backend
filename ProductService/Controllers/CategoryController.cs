@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 namespace Loop.Controller
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/categories")]
     [Authorize]
     public class CategoryController : ControllerBase
     {
@@ -121,7 +121,7 @@ namespace Loop.Controller
         }
 
         // DELETE: api/Categories
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCategory(Guid id)
         {
             var category = await _context.Categories

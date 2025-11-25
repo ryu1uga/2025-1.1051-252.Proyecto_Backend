@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 namespace Loop.Controller
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/inventories")]
     [Authorize]
     public class InventoryController : ControllerBase
     {
@@ -124,7 +124,7 @@ namespace Loop.Controller
         }
 
         // DELETE: api/Inventories
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteInventory(Guid id)
         {
             var inventory = await _context.Inventories
