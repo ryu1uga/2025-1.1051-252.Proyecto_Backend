@@ -1,15 +1,19 @@
+
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Loop.Data;
 using Loop.DTOs.Common;
 using Loop.Models.Common;
 using Loop.Services;
-using BCrypt.Net;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Loop.Controller
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize]
     public class ReviewController : ControllerBase
     {
         private readonly ApplicationDbContext _context;

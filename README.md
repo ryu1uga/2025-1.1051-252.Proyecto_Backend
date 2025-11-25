@@ -1,4 +1,7 @@
-Como utilizar la base de datos:
+# arqui252-grupo7-backend
+Repository for grupo7
+
+## Como utilizar la base de datos:
 
 - Ejecutar el run_docker.py iniciando docker.desktop.
 - En pgAdmin4 enviar struct y data por Query Tool.

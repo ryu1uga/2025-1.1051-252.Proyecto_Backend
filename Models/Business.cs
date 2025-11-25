@@ -15,6 +15,5 @@ namespace Loop.Models.Common
         public ICollection<BusinessMember>? BusinessMembers { get; set; }
         public ICollection<OrderItem>? OrderItems { get; set; }
         public ICollection<Payout>? Payouts { get; set; }
-        public ICollection<Product>? Products { get; set; }
     }
 }

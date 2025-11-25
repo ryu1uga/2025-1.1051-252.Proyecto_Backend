@@ -71,15 +71,6 @@ CREATE TABLE public."CartItem" (
 
 ALTER TABLE public."CartItem" OWNER TO loop;
 
-CREATE TABLE public."Category" (
-    "Id" uuid NOT NULL,
-    "Name" varchar NOT NULL,
-    "CreatedAt" timestamp with time zone NOT NULL,
-    "UpdatedAt" timestamp with time zone NOT NULL
-);
-
-ALTER TABLE public."Category" OWNER TO loop;
-
 CREATE TABLE public."Customer" (
     "Id" uuid NOT NULL,
     "UserId" uuid NOT NULL,
@@ -98,16 +89,6 @@ CREATE TABLE public."Favorite" (
 );
 
 ALTER TABLE public."Favorite" OWNER TO loop;
-
-CREATE TABLE public."Inventory" (
-    "Id" uuid NOT NULL,
-    "ProductId" uuid NOT NULL,
-    "Quantity" integer NOT NULL,
-    "CreatedAt" timestamp with time zone NOT NULL,
-    "UpdatedAt" timestamp with time zone NOT NULL
-);
-
-ALTER TABLE public."Inventory" OWNER TO loop;
 
 CREATE TABLE public."Order" (
     "Id" uuid NOT NULL,
@@ -163,41 +144,6 @@ CREATE TABLE public."Payout" (
 
 ALTER TABLE public."Payout" OWNER TO loop;
 
-CREATE TABLE public."Product" (
-    "Id" uuid NOT NULL,
-    "BusinessId" uuid NOT NULL,
-    "CategoryId" uuid NOT NULL,
-    "Name" varchar NOT NULL,
-    "Description" varchar NOT NULL,
-    "Status" integer NOT NULL,
-    "Price" float NOT NULL,
-    "CreatedAt" timestamp with time zone NOT NULL,
-    "UpdatedAt" timestamp with time zone NOT NULL
-);
-
-ALTER TABLE public."Product" OWNER TO loop;
-
-CREATE TABLE public."ProductImage" (
-    "Id" uuid NOT NULL,
-    "ProductId" uuid NOT NULL,
-    "Url" varchar NOT NULL,
-    "Order" integer NOT NULL,
-    "CreatedAt" timestamp with time zone NOT NULL,
-    "UpdatedAt" timestamp with time zone NOT NULL
-);
-
-ALTER TABLE public."ProductImage" OWNER TO loop;
-
-CREATE TABLE public."ProductTag" (
-    "Id" uuid NOT NULL,
-    "ProductId" uuid NOT NULL,
-    "TagId" uuid NOT NULL,
-    "CreatedAt" timestamp with time zone NOT NULL,
-    "UpdatedAt" timestamp with time zone NOT NULL
-);
-
-ALTER TABLE public."ProductTag" OWNER TO loop;
-
 CREATE TABLE public."Review" (
     "Id" uuid NOT NULL,
     "ProductId" uuid NOT NULL,
@@ -210,21 +156,16 @@ CREATE TABLE public."Review" (
 
 ALTER TABLE public."Review" OWNER TO loop;
 
-CREATE TABLE public."Tag" (
-    "Id" uuid NOT NULL,
-    "Name" varchar NOT NULL,
-    "CreatedAt" timestamp with time zone NOT NULL,
-    "UpdatedAt" timestamp with time zone NOT NULL
-);
-
-ALTER TABLE public."Tag" OWNER TO loop;
-
 CREATE TABLE public."User" (
     "Id" uuid NOT NULL,
     "Name" varchar NOT NULL,
     "Email" varchar NOT NULL,
-    "Password" varchar NOT NULL,
     "UserType" integer NOT NULL,
+    "RefreshToken" varchar,
+    "TokenExpirationDate" timestamp with time zone,
+    "VerificationCode" integer,
+    "CodeRegisteredDate" timestamp with time zone,
+    "CodeExpirationDate" timestamp with time zone,
     "CreatedAt" timestamp with time zone NOT NULL,
     "UpdatedAt" timestamp with time zone NOT NULL
 );
@@ -247,17 +188,11 @@ ALTER TABLE ONLY public."Cart"
 ALTER TABLE ONLY public."CartItem"
     ADD CONSTRAINT "CartItem_pkey" PRIMARY KEY ("Id");
 
-ALTER TABLE ONLY public."Category"
-    ADD CONSTRAINT "Category_pkey" PRIMARY KEY ("Id");
-
 ALTER TABLE ONLY public."Customer"
     ADD CONSTRAINT "Customer_pkey" PRIMARY KEY ("Id");
 
 ALTER TABLE ONLY public."Favorite"
     ADD CONSTRAINT "Favorite_pkey" PRIMARY KEY ("Id");
-
-ALTER TABLE ONLY public."Inventory"
-    ADD CONSTRAINT "Inventory_pkey" PRIMARY KEY ("Id");
 
 ALTER TABLE ONLY public."Order"
     ADD CONSTRAINT "Order_pkey" PRIMARY KEY ("Id");
@@ -271,20 +206,8 @@ ALTER TABLE ONLY public."Payment"
 ALTER TABLE ONLY public."Payout"
     ADD CONSTRAINT "Payout_pkey" PRIMARY KEY ("Id");
 
-ALTER TABLE ONLY public."Product"
-    ADD CONSTRAINT "Product_pkey" PRIMARY KEY ("Id");
-
-ALTER TABLE ONLY public."ProductImage"
-    ADD CONSTRAINT "ProductImage_pkey" PRIMARY KEY ("Id");
-
-ALTER TABLE ONLY public."ProductTag"
-    ADD CONSTRAINT "ProductTag_pkey" PRIMARY KEY ("Id");
-
 ALTER TABLE ONLY public."Review"
     ADD CONSTRAINT "Review_pkey" PRIMARY KEY ("Id");
-
-ALTER TABLE ONLY public."Tag"
-    ADD CONSTRAINT "Tag_pkey" PRIMARY KEY ("Id");
 
 ALTER TABLE ONLY public."User"
     ADD CONSTRAINT "User_pkey" PRIMARY KEY ("Id");
@@ -302,14 +225,8 @@ ALTER TABLE ONLY public."OrderItem"
 ALTER TABLE ONLY public."Payout"
     ADD CONSTRAINT "FK_Payout_Business" FOREIGN KEY ("BusinessId") REFERENCES public."Business" ("Id") ON DELETE CASCADE;
 
-ALTER TABLE ONLY public."Product"
-    ADD CONSTRAINT "FK_Product_Business" FOREIGN KEY ("BusinessId") REFERENCES public."Business" ("Id") ON DELETE CASCADE;
-
 ALTER TABLE ONLY public."CartItem"
     ADD CONSTRAINT "FK_CartItem_Cart" FOREIGN KEY ("CartId") REFERENCES public."Cart" ("Id") ON DELETE CASCADE;
-
-ALTER TABLE ONLY public."Product"
-    ADD CONSTRAINT "FK_Product_Category" FOREIGN KEY ("CategoryId") REFERENCES public."Category" ("Id") ON DELETE CASCADE;
 
 ALTER TABLE ONLY public."Address"
     ADD CONSTRAINT "FK_Address_Customer" FOREIGN KEY ("CustomerId") REFERENCES public."Customer" ("Id") ON DELETE CASCADE;
@@ -328,30 +245,6 @@ ALTER TABLE ONLY public."OrderItem"
 
 ALTER TABLE ONLY public."Payment"
     ADD CONSTRAINT "FK_Payment_Order" FOREIGN KEY ("OrderId") REFERENCES public."Order" ("Id") ON DELETE CASCADE;
-
-ALTER TABLE ONLY public."CartItem"
-    ADD CONSTRAINT "FK_CartItem_Product" FOREIGN KEY ("ProductId") REFERENCES public."Product" ("Id") ON DELETE CASCADE;
-
-ALTER TABLE ONLY public."Favorite"
-    ADD CONSTRAINT "FK_Favorite_Product" FOREIGN KEY ("ProductId") REFERENCES public."Product" ("Id") ON DELETE CASCADE;
-
-ALTER TABLE ONLY public."Inventory"
-    ADD CONSTRAINT "FK_Inventory_Product" FOREIGN KEY ("ProductId") REFERENCES public."Product" ("Id") ON DELETE CASCADE;
-
-ALTER TABLE ONLY public."OrderItem"
-    ADD CONSTRAINT "FK_OrderItem_Product" FOREIGN KEY ("ProductId") REFERENCES public."Product" ("Id") ON DELETE CASCADE;
-
-ALTER TABLE ONLY public."ProductImage"
-    ADD CONSTRAINT "FK_ProductImage_Product" FOREIGN KEY ("ProductId") REFERENCES public."Product" ("Id") ON DELETE CASCADE;
-
-ALTER TABLE ONLY public."ProductTag"
-    ADD CONSTRAINT "FK_ProductTag_Product" FOREIGN KEY ("ProductId") REFERENCES public."Product" ("Id") ON DELETE CASCADE;
-
-ALTER TABLE ONLY public."Review"
-    ADD CONSTRAINT "FK_Review_Product" FOREIGN KEY ("ProductId") REFERENCES public."Product" ("Id") ON DELETE CASCADE;
-
-ALTER TABLE ONLY public."ProductTag"
-    ADD CONSTRAINT "FK_ProductTag_Tag" FOREIGN KEY ("TagId") REFERENCES public."Tag" ("Id") ON DELETE CASCADE;
 
 ALTER TABLE ONLY public."Customer"
     ADD CONSTRAINT "FK_Customer_User" FOREIGN KEY ("UserId") REFERENCES public."User" ("Id") ON DELETE CASCADE;

@@ -1,0 +1,8 @@
+POST https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyCsmVi5bzEUt6vjKgDIq6bZoYi906XewHw
+Content-Type: application/json
+
+{
+  "email": "test123@email.com",
+  "password": "123456",
+  "returnSecureToken": true
+}

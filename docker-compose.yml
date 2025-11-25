@@ -3,15 +3,16 @@ services:
     image: postgres
     environment:
       POSTGRES_USER: loop
-      POSTGRES_PASSWORD: loopadmin
+      # 🚩 Leer la contraseña desde el archivo .secrets.env
+      POSTGRES_PASSWORD: ${POSTGRES_DB_PASSWORD}
       POSTGRES_DB: loop_db
     ports:
       - "5430:5432"
     volumes:
-      - postgres_data:/var/lib/postgresql/data
+      - postgres_data:/var/lib/postgresql
     command: ["postgres", "-c", "shared_preload_libraries=uuid-ossp"]
 
-  web:
+  order-user-service:
     build:
       context: .
       dockerfile: Dockerfile
@@ -19,10 +20,36 @@ services:
       - "8000:80"
     depends_on:
       - db
+    # 🚩 Añadir el archivo de secretos para DB y Firebase
     env_file:
       - .env
     environment:
-      ConnectionStrings__DefaultConnection: "Host=db;Database=loop_db;Username=loop;Password=loopadmin"
+      # 🚩 Usar la variable de Firebase
+      FIREBASE_PROJECT_ID: ${FIREBASE_PROJECT_ID}
+      FIREBASE_PRIVATE_KEY_ID: ${FIREBASE_PRIVATE_KEY_ID}
+      FIREBASE_CLIENT_EMAIL: ${FIREBASE_CLIENT_EMAIL}
+      FIREBASE_PRIVATE_KEY: ${FIREBASE_PRIVATE_KEY}
+      
+      # 🚩 Usar la variable de la contraseña de la DB para la cadena de conexión
+      ConnectionStrings__DefaultConnection: "Host=db;Database=loop_db;Username=loop;Password=${POSTGRES_DB_PASSWORD}"
+    volumes:
+      - ./logs:/app/Logs
+
+  product-service:
+    build:
+      context: ./ProductService 
+      dockerfile: Dockerfile 
+    ports:
+      - "8001:80" # Nuevo puerto para este servicio
+    depends_on:
+      - db
+    env_file:
+      - .env
+    environment:
+      # Usar la variable de contraseña para la DB del producto
+      ConnectionStrings__ProductConnection: "Host=db;Database=loop_db_products;Username=loop;Password=${POSTGRES_DB_PASSWORD}"
+      # La clave JWT debe ser la misma en ambos servicios
+      Jwt__Key: "c1b63ad474f840989094c0a96386711f6b75797eaf67d9fa3c2405750359db2cfc3cbb58dbccea65e607411ff34bb79c5e78ad274bdb86b7613abf479b3dd43d"
 
 volumes:
   postgres_data:

@@ -14,6 +14,5 @@ namespace Loop.Models.Common
         public DateTime UpdatedAt { get; set; }
 
         public Cart? Cart { get; set; }
-        public Product? Product { get; set; }
     }
 }

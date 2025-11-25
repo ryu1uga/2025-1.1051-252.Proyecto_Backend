@@ -13,7 +13,6 @@ namespace Loop.Models.Common
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
 
-        public Product? Product { get; set; }
         public Customer? Customer { get; set; }
     }
 }

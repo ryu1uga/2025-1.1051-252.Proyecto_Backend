@@ -17,6 +17,5 @@ namespace Loop.Models.Common
 
         public Order? Order { get; set; }
         public Business? Business { get; set; }
-        public Product? Product { get; set; }
     }
 }

@@ -14,19 +14,13 @@ namespace Loop.Data
         public DbSet<BusinessMember> BusinessMembers { get; set; }
         public DbSet<Cart> Carts { get; set; }
         public DbSet<CartItem> CartItems { get; set; }
-        public DbSet<Category> Categories { get; set; }
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Favorite> Favorites { get; set; }
-        public DbSet<Inventory> Inventories { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderItem> OrderItems { get; set; }
         public DbSet<Payment> Payments { get; set; }
         public DbSet<Payout> Payouts { get; set; }
-        public DbSet<Product> Products { get; set; }
-        public DbSet<ProductImage> ProductImages { get; set; }
-        public DbSet<ProductTag> ProductTags { get; set; }
         public DbSet<Review> Reviews { get; set; }
-        public DbSet<Tag> Tags { get; set; }
         public DbSet<User> Users { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -51,19 +45,11 @@ namespace Loop.Data
                 .Property(p => p.Id)
                 .HasDefaultValueSql("gen_random_uuid()");
 
-            modelBuilder.Entity<Category>()
-                .Property(p => p.Id)
-                .HasDefaultValueSql("gen_random_uuid()");
-
             modelBuilder.Entity<Customer>()
                 .Property(p => p.Id)
                 .HasDefaultValueSql("gen_random_uuid()");
 
             modelBuilder.Entity<Favorite>()
-                .Property(p => p.Id)
-                .HasDefaultValueSql("gen_random_uuid()");
-
-            modelBuilder.Entity<Inventory>()
                 .Property(p => p.Id)
                 .HasDefaultValueSql("gen_random_uuid()");
 
@@ -82,24 +68,8 @@ namespace Loop.Data
             modelBuilder.Entity<Payout>()
                 .Property(p => p.Id)
                 .HasDefaultValueSql("gen_random_uuid()");
-
-            modelBuilder.Entity<Product>()
-                .Property(p => p.Id)
-                .HasDefaultValueSql("gen_random_uuid()");
-
-            modelBuilder.Entity<ProductImage>()
-                .Property(p => p.Id)
-                .HasDefaultValueSql("gen_random_uuid()");
-
-            modelBuilder.Entity<ProductTag>()
-                .Property(p => p.Id)
-                .HasDefaultValueSql("gen_random_uuid()");
-
+            
             modelBuilder.Entity<Review>()
-                .Property(p => p.Id)
-                .HasDefaultValueSql("gen_random_uuid()");
-
-            modelBuilder.Entity<Tag>()
                 .Property(p => p.Id)
                 .HasDefaultValueSql("gen_random_uuid()");
 
@@ -131,23 +101,11 @@ namespace Loop.Data
                 .WithOne(p => p.Business)
                 .HasForeignKey(p => p.BusinessId)
                 .OnDelete(DeleteBehavior.Cascade);
-                
-            modelBuilder.Entity<Business>()
-                .HasMany<Product>(b => b.Products)
-                .WithOne(p => p.Business)
-                .HasForeignKey(p => p.BusinessId)
-                .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<Cart>()
                 .HasMany<CartItem>(c => c.CartItems)
                 .WithOne(ci => ci.Cart)
                 .HasForeignKey(ci => ci.CartId)
-                .OnDelete(DeleteBehavior.Cascade);
-
-            modelBuilder.Entity<Category>()
-                .HasMany<Product>(c => c.Products)
-                .WithOne(p => p.Category)
-                .HasForeignKey(p => p.CategoryId)
                 .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<Customer>()
@@ -184,54 +142,6 @@ namespace Loop.Data
                 .HasMany<Payment>(o => o.Payments)
                 .WithOne(p => p.Order)
                 .HasForeignKey(p => p.OrderId)
-                .OnDelete(DeleteBehavior.Cascade);
-
-            modelBuilder.Entity<Product>()
-                .HasMany<CartItem>(p => p.CartItems)
-                .WithOne(ci => ci.Product)
-                .HasForeignKey(ci => ci.ProductId)
-                .OnDelete(DeleteBehavior.Cascade);
-            
-            modelBuilder.Entity<Product>()
-                .HasMany<Favorite>(p => p.Favorites)
-                .WithOne(f => f.Product)
-                .HasForeignKey(f => f.ProductId)
-                .OnDelete(DeleteBehavior.Cascade);
-            
-            modelBuilder.Entity<Product>()
-                .HasMany<Inventory>(p => p.Inventories)
-                .WithOne(i => i.Product)
-                .HasForeignKey(i => i.ProductId)
-                .OnDelete(DeleteBehavior.Cascade);
-            
-            modelBuilder.Entity<Product>()
-                .HasMany<OrderItem>(p => p.OrderItems)
-                .WithOne(oi => oi.Product)
-                .HasForeignKey(oi => oi.ProductId)
-                .OnDelete(DeleteBehavior.Cascade);
-            
-            modelBuilder.Entity<Product>()
-                .HasMany<ProductImage>(p => p.ProductImages)
-                .WithOne(pi => pi.Product)
-                .HasForeignKey(pi => pi.ProductId)
-                .OnDelete(DeleteBehavior.Cascade);
-            
-            modelBuilder.Entity<Product>()
-                .HasMany<ProductTag>(p => p.ProductTags)
-                .WithOne(pt => pt.Product)
-                .HasForeignKey(pt => pt.ProductId)
-                .OnDelete(DeleteBehavior.Cascade);
-            
-            modelBuilder.Entity<Product>()
-                .HasMany<Review>(p => p.Reviews)
-                .WithOne(r => r.Product)
-                .HasForeignKey(r => r.ProductId)
-                .OnDelete(DeleteBehavior.Cascade);
-
-            modelBuilder.Entity<Tag>()
-                .HasMany<ProductTag>(t => t.ProductTags)
-                .WithOne(pt => pt.Tag)
-                .HasForeignKey(pt => pt.TagId)
                 .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<User>()

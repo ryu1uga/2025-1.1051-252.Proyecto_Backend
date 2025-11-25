@@ -1,0 +1,889 @@
+2025-11-25 05:01:38 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed.
+2025-11-25 05:01:38 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-11-25 05:01:38 [INF] Creating key {4350565e-702e-4349-aa5d-72b1c122f12e} with creation date 2025-11-25 05:01:38Z, activation date 2025-11-25 05:01:38Z, and expiration date 2026-02-23 05:01:38Z.
+2025-11-25 05:01:38 [WRN] No XML encryptor configured. Key {4350565e-702e-4349-aa5d-72b1c122f12e} may be persisted to storage in unencrypted form.
+2025-11-25 05:01:38 [INF] Writing data to file '/root/.aspnet/DataProtection-Keys/key-4350565e-702e-4349-aa5d-72b1c122f12e.xml'.
+2025-11-25 05:01:38 [WRN] Overriding address(es) 'http://0.0.0.0:80'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-11-25 05:01:38 [INF] Now listening on: http://[::]:80
+2025-11-25 05:01:38 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-25 05:01:38 [INF] Hosting environment: Development
+2025-11-25 05:01:38 [INF] Content root path: /app
+2025-11-25 05:02:03 [INF] Request starting HTTP/1.1 GET http://localhost:8000/ - -
+2025-11-25 05:02:03 [INF] Request finished HTTP/1.1 GET http://localhost:8000/ - - - 301 0 - 42.1988ms
+2025-11-25 05:02:03 [INF] Request starting HTTP/1.1 GET http://localhost:8000/index.html - -
+2025-11-25 05:02:03 [INF] Request finished HTTP/1.1 GET http://localhost:8000/index.html - - - 200 - text/html;charset=utf-8 66.4198ms
+2025-11-25 05:02:03 [INF] Request starting HTTP/1.1 GET http://localhost:8000/swagger-ui.css - -
+2025-11-25 05:02:03 [INF] Request starting HTTP/1.1 GET http://localhost:8000/swagger-ui-bundle.js - -
+2025-11-25 05:02:03 [INF] Request starting HTTP/1.1 GET http://localhost:8000/swagger-ui-standalone-preset.js - -
+2025-11-25 05:02:03 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-11-25 05:02:03 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-11-25 05:02:03 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-11-25 05:02:03 [INF] Request finished HTTP/1.1 GET http://localhost:8000/swagger-ui.css - - - 200 143943 text/css 30.9253ms
+2025-11-25 05:02:03 [INF] Request finished HTTP/1.1 GET http://localhost:8000/swagger-ui-standalone-preset.js - - - 200 339486 text/javascript 28.3022ms
+2025-11-25 05:02:03 [INF] Request finished HTTP/1.1 GET http://localhost:8000/swagger-ui-bundle.js - - - 200 1096145 text/javascript 29.7686ms
+2025-11-25 05:02:03 [INF] Request starting HTTP/1.1 GET http://localhost:8000/swagger/v1/swagger.json - -
+2025-11-25 05:02:03 [INF] Request starting HTTP/1.1 GET http://localhost:8000/favicon-32x32.png - -
+2025-11-25 05:02:03 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-11-25 05:02:03 [INF] Request finished HTTP/1.1 GET http://localhost:8000/favicon-32x32.png - - - 200 628 image/png 2.4611ms
+2025-11-25 05:02:03 [INF] Request finished HTTP/1.1 GET http://localhost:8000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 98.8736ms
+2025-11-25 05:06:36 [INF] Application is shutting down...
+2025-11-25 05:07:48 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed.
+2025-11-25 05:07:48 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-11-25 05:07:48 [INF] Creating key {dd4ba7fd-3dc7-43e0-acc7-a1594b77460c} with creation date 2025-11-25 05:07:48Z, activation date 2025-11-25 05:07:48Z, and expiration date 2026-02-23 05:07:48Z.
+2025-11-25 05:07:48 [WRN] No XML encryptor configured. Key {dd4ba7fd-3dc7-43e0-acc7-a1594b77460c} may be persisted to storage in unencrypted form.
+2025-11-25 05:07:48 [INF] Writing data to file '/root/.aspnet/DataProtection-Keys/key-dd4ba7fd-3dc7-43e0-acc7-a1594b77460c.xml'.
+2025-11-25 05:07:48 [WRN] Overriding address(es) 'http://0.0.0.0:80'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-11-25 05:07:48 [INF] Now listening on: http://[::]:80
+2025-11-25 05:07:48 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-25 05:07:48 [INF] Hosting environment: Development
+2025-11-25 05:07:48 [INF] Content root path: /app
+2025-11-25 05:10:03 [INF] Application is shutting down...
+2025-11-25 05:10:39 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed.
+2025-11-25 05:10:40 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-11-25 05:10:40 [INF] Creating key {1ee09c0b-f809-4d3e-8248-93b6c8aad0d0} with creation date 2025-11-25 05:10:40Z, activation date 2025-11-25 05:10:40Z, and expiration date 2026-02-23 05:10:40Z.
+2025-11-25 05:10:40 [WRN] No XML encryptor configured. Key {1ee09c0b-f809-4d3e-8248-93b6c8aad0d0} may be persisted to storage in unencrypted form.
+2025-11-25 05:10:40 [INF] Writing data to file '/root/.aspnet/DataProtection-Keys/key-1ee09c0b-f809-4d3e-8248-93b6c8aad0d0.xml'.
+2025-11-25 05:10:40 [WRN] Overriding address(es) 'http://0.0.0.0:80'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-11-25 05:10:40 [INF] Now listening on: http://[::]:80
+2025-11-25 05:10:40 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-25 05:10:40 [INF] Hosting environment: Development
+2025-11-25 05:10:40 [INF] Content root path: /app
+2025-11-25 05:11:17 [INF] Application is shutting down...
+2025-11-25 05:11:28 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed.
+2025-11-25 05:11:29 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-11-25 05:11:29 [INF] Creating key {0f691e57-a8f5-4a12-9bad-0298c08ff462} with creation date 2025-11-25 05:11:29Z, activation date 2025-11-25 05:11:29Z, and expiration date 2026-02-23 05:11:29Z.
+2025-11-25 05:11:29 [WRN] No XML encryptor configured. Key {0f691e57-a8f5-4a12-9bad-0298c08ff462} may be persisted to storage in unencrypted form.
+2025-11-25 05:11:29 [INF] Writing data to file '/root/.aspnet/DataProtection-Keys/key-0f691e57-a8f5-4a12-9bad-0298c08ff462.xml'.
+2025-11-25 05:11:29 [WRN] Overriding address(es) 'http://0.0.0.0:80'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-11-25 05:11:29 [INF] Now listening on: http://[::]:80
+2025-11-25 05:11:29 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-25 05:11:29 [INF] Hosting environment: Development
+2025-11-25 05:11:29 [INF] Content root path: /app
+2025-11-25 05:12:47 [INF] Application is shutting down...
+2025-11-25 05:12:53 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed.
+2025-11-25 05:12:53 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-11-25 05:12:53 [INF] Creating key {3dd63699-3dc1-4267-9050-7d336ca7c6e6} with creation date 2025-11-25 05:12:53Z, activation date 2025-11-25 05:12:53Z, and expiration date 2026-02-23 05:12:53Z.
+2025-11-25 05:12:53 [WRN] No XML encryptor configured. Key {3dd63699-3dc1-4267-9050-7d336ca7c6e6} may be persisted to storage in unencrypted form.
+2025-11-25 05:12:53 [INF] Writing data to file '/root/.aspnet/DataProtection-Keys/key-3dd63699-3dc1-4267-9050-7d336ca7c6e6.xml'.
+2025-11-25 05:12:53 [WRN] Overriding address(es) 'http://0.0.0.0:80'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-11-25 05:12:53 [INF] Now listening on: http://[::]:80
+2025-11-25 05:12:53 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-25 05:12:53 [INF] Hosting environment: Development
+2025-11-25 05:12:53 [INF] Content root path: /app
+2025-11-25 05:14:04 [INF] Application is shutting down...
+2025-11-25 05:14:08 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed.
+2025-11-25 05:14:08 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-11-25 05:14:08 [INF] Creating key {0a25a93c-0837-4a7e-b523-2915a9a8535b} with creation date 2025-11-25 05:14:08Z, activation date 2025-11-25 05:14:08Z, and expiration date 2026-02-23 05:14:08Z.
+2025-11-25 05:14:08 [WRN] No XML encryptor configured. Key {0a25a93c-0837-4a7e-b523-2915a9a8535b} may be persisted to storage in unencrypted form.
+2025-11-25 05:14:08 [INF] Writing data to file '/root/.aspnet/DataProtection-Keys/key-0a25a93c-0837-4a7e-b523-2915a9a8535b.xml'.
+2025-11-25 05:14:09 [WRN] Overriding address(es) 'http://0.0.0.0:80'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-11-25 05:14:09 [INF] Now listening on: http://[::]:80
+2025-11-25 05:14:09 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-25 05:14:09 [INF] Hosting environment: Development
+2025-11-25 05:14:09 [INF] Content root path: /app
+2025-11-25 05:15:42 [INF] Application is shutting down...
+2025-11-25 05:16:07 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed.
+2025-11-25 05:16:07 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-11-25 05:16:07 [INF] Creating key {c7eeb722-e905-4fb8-847c-8ece21762a6d} with creation date 2025-11-25 05:16:07Z, activation date 2025-11-25 05:16:07Z, and expiration date 2026-02-23 05:16:07Z.
+2025-11-25 05:16:07 [WRN] No XML encryptor configured. Key {c7eeb722-e905-4fb8-847c-8ece21762a6d} may be persisted to storage in unencrypted form.
+2025-11-25 05:16:07 [INF] Writing data to file '/root/.aspnet/DataProtection-Keys/key-c7eeb722-e905-4fb8-847c-8ece21762a6d.xml'.
+2025-11-25 05:16:07 [WRN] Overriding address(es) 'http://0.0.0.0:80'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-11-25 05:16:07 [INF] Now listening on: http://[::]:80
+2025-11-25 05:16:07 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-25 05:16:07 [INF] Hosting environment: Development
+2025-11-25 05:16:07 [INF] Content root path: /app
+2025-11-25 05:19:09 [INF] Application is shutting down...
+2025-11-25 05:19:12 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed.
+2025-11-25 05:19:12 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-11-25 05:19:12 [INF] Creating key {415d1a69-c649-44c7-9596-dcdf7d2b8a0e} with creation date 2025-11-25 05:19:12Z, activation date 2025-11-25 05:19:12Z, and expiration date 2026-02-23 05:19:12Z.
+2025-11-25 05:19:12 [WRN] No XML encryptor configured. Key {415d1a69-c649-44c7-9596-dcdf7d2b8a0e} may be persisted to storage in unencrypted form.
+2025-11-25 05:19:12 [INF] Writing data to file '/root/.aspnet/DataProtection-Keys/key-415d1a69-c649-44c7-9596-dcdf7d2b8a0e.xml'.
+2025-11-25 05:19:12 [WRN] Overriding address(es) 'http://0.0.0.0:80'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-11-25 05:19:12 [INF] Now listening on: http://[::]:80
+2025-11-25 05:19:12 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-25 05:19:12 [INF] Hosting environment: Development
+2025-11-25 05:19:12 [INF] Content root path: /app
+2025-11-25 05:42:41 [INF] Request starting HTTP/1.1 GET http://localhost:8000/api/User/audit-logs - -
+2025-11-25 05:42:41 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-11-25 05:42:41 [INF] AuthenticationScheme: Bearer was challenged.
+2025-11-25 05:42:41 [INF] Request finished HTTP/1.1 GET http://localhost:8000/api/User/audit-logs - - - 401 0 - 100.8606ms
+2025-11-25 05:42:52 [INF] Request starting HTTP/1.1 POST http://localhost:8000/api/User/login application/json 43
+2025-11-25 05:42:52 [INF] CORS policy execution successful.
+2025-11-25 05:42:52 [INF] Executing endpoint 'Loop.Controller.UserController.LoginUser (Loop)'
+2025-11-25 05:42:52 [INF] Route matched with {action = "LoginUser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginUser(Loop.DTOs.Common.LoginRequestDTO) on controller Loop.Controller.UserController (Loop).
+2025-11-25 05:42:53 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-11-25 05:42:53 [INF] Executed DbCommand (32ms) [Parameters=[@__loginDTO_Email_0='Admin'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."CodeExpirationDate", u."CodeRegisteredDate", u."CreatedAt", u."Email", u."Name", u."Password", u."RefreshToken", u."TokenExpirationDate", u."UpdatedAt", u."UserType", u."VerificationCode"
+FROM "User" AS u
+WHERE u."Email" = @__loginDTO_Email_0
+LIMIT 2
+2025-11-25 05:42:53 [WRN] Login fallido | Email: Admin | IP: ::ffff:172.18.0.1 | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 | Hora: "2025-11-25T05:42:53.9451055Z"
+2025-11-25 05:42:53 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-25 05:42:53 [INF] Executed action Loop.Controller.UserController.LoginUser (Loop) in 1238.8238ms
+2025-11-25 05:42:53 [INF] Executed endpoint 'Loop.Controller.UserController.LoginUser (Loop)'
+2025-11-25 05:42:53 [INF] Request finished HTTP/1.1 POST http://localhost:8000/api/User/login application/json 43 - 401 - application/json;+charset=utf-8 1280.4737ms
+2025-11-25 05:42:59 [INF] Request starting HTTP/1.1 POST http://localhost:8000/api/User/login application/json 46
+2025-11-25 05:42:59 [INF] CORS policy execution successful.
+2025-11-25 05:42:59 [INF] Executing endpoint 'Loop.Controller.UserController.LoginUser (Loop)'
+2025-11-25 05:42:59 [INF] Route matched with {action = "LoginUser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginUser(Loop.DTOs.Common.LoginRequestDTO) on controller Loop.Controller.UserController (Loop).
+2025-11-25 05:42:59 [INF] Executed DbCommand (3ms) [Parameters=[@__loginDTO_Email_0='Admin'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."CodeExpirationDate", u."CodeRegisteredDate", u."CreatedAt", u."Email", u."Name", u."Password", u."RefreshToken", u."TokenExpirationDate", u."UpdatedAt", u."UserType", u."VerificationCode"
+FROM "User" AS u
+WHERE u."Email" = @__loginDTO_Email_0
+LIMIT 2
+2025-11-25 05:42:59 [WRN] Login fallido | Email: Admin | IP: ::ffff:172.18.0.1 | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 | Hora: "2025-11-25T05:42:59.5384256Z"
+2025-11-25 05:42:59 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-25 05:42:59 [INF] Executed action Loop.Controller.UserController.LoginUser (Loop) in 28.9166ms
+2025-11-25 05:42:59 [INF] Executed endpoint 'Loop.Controller.UserController.LoginUser (Loop)'
+2025-11-25 05:42:59 [INF] Request finished HTTP/1.1 POST http://localhost:8000/api/User/login application/json 46 - 401 - application/json;+charset=utf-8 37.2342ms
+2025-11-25 05:43:04 [INF] Request starting HTTP/1.1 POST http://localhost:8000/api/User/login application/json 45
+2025-11-25 05:43:04 [INF] CORS policy execution successful.
+2025-11-25 05:43:04 [INF] Executing endpoint 'Loop.Controller.UserController.LoginUser (Loop)'
+2025-11-25 05:43:04 [INF] Route matched with {action = "LoginUser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginUser(Loop.DTOs.Common.LoginRequestDTO) on controller Loop.Controller.UserController (Loop).
+2025-11-25 05:43:04 [INF] Executed DbCommand (1ms) [Parameters=[@__loginDTO_Email_0='Admin'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."CodeExpirationDate", u."CodeRegisteredDate", u."CreatedAt", u."Email", u."Name", u."Password", u."RefreshToken", u."TokenExpirationDate", u."UpdatedAt", u."UserType", u."VerificationCode"
+FROM "User" AS u
+WHERE u."Email" = @__loginDTO_Email_0
+LIMIT 2
+2025-11-25 05:43:04 [WRN] Login fallido | Email: Admin | IP: ::ffff:172.18.0.1 | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 | Hora: "2025-11-25T05:43:04.9043845Z"
+2025-11-25 05:43:04 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-25 05:43:04 [INF] Executed action Loop.Controller.UserController.LoginUser (Loop) in 48.2938ms
+2025-11-25 05:43:04 [INF] Executed endpoint 'Loop.Controller.UserController.LoginUser (Loop)'
+2025-11-25 05:43:04 [INF] Request finished HTTP/1.1 POST http://localhost:8000/api/User/login application/json 45 - 401 - application/json;+charset=utf-8 52.0465ms
+2025-11-25 05:43:10 [INF] Request starting HTTP/1.1 POST http://localhost:8000/api/User/login application/json 51
+2025-11-25 05:43:10 [INF] CORS policy execution successful.
+2025-11-25 05:43:10 [INF] Executing endpoint 'Loop.Controller.UserController.LoginUser (Loop)'
+2025-11-25 05:43:10 [INF] Route matched with {action = "LoginUser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginUser(Loop.DTOs.Common.LoginRequestDTO) on controller Loop.Controller.UserController (Loop).
+2025-11-25 05:43:10 [INF] Executed DbCommand (1ms) [Parameters=[@__loginDTO_Email_0='Admin'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."CodeExpirationDate", u."CodeRegisteredDate", u."CreatedAt", u."Email", u."Name", u."Password", u."RefreshToken", u."TokenExpirationDate", u."UpdatedAt", u."UserType", u."VerificationCode"
+FROM "User" AS u
+WHERE u."Email" = @__loginDTO_Email_0
+LIMIT 2
+2025-11-25 05:43:10 [WRN] Login fallido | Email: Admin | IP: ::ffff:172.18.0.1 | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 | Hora: "2025-11-25T05:43:10.5001426Z"
+2025-11-25 05:43:10 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-25 05:43:10 [INF] Executed action Loop.Controller.UserController.LoginUser (Loop) in 4.0116ms
+2025-11-25 05:43:10 [INF] Executed endpoint 'Loop.Controller.UserController.LoginUser (Loop)'
+2025-11-25 05:43:10 [INF] Request finished HTTP/1.1 POST http://localhost:8000/api/User/login application/json 51 - 401 - application/json;+charset=utf-8 6.3754ms
+2025-11-25 05:43:18 [INF] Request starting HTTP/1.1 POST http://localhost:8000/api/User/login application/json 48
+2025-11-25 05:43:18 [INF] CORS policy execution successful.
+2025-11-25 05:43:18 [INF] Executing endpoint 'Loop.Controller.UserController.LoginUser (Loop)'
+2025-11-25 05:43:18 [INF] Route matched with {action = "LoginUser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginUser(Loop.DTOs.Common.LoginRequestDTO) on controller Loop.Controller.UserController (Loop).
+2025-11-25 05:43:18 [INF] Executed DbCommand (1ms) [Parameters=[@__loginDTO_Email_0='Admin'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."CodeExpirationDate", u."CodeRegisteredDate", u."CreatedAt", u."Email", u."Name", u."Password", u."RefreshToken", u."TokenExpirationDate", u."UpdatedAt", u."UserType", u."VerificationCode"
+FROM "User" AS u
+WHERE u."Email" = @__loginDTO_Email_0
+LIMIT 2
+2025-11-25 05:43:18 [WRN] Login fallido | Email: Admin | IP: ::ffff:172.18.0.1 | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 | Hora: "2025-11-25T05:43:18.8052061Z"
+2025-11-25 05:43:18 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-25 05:43:18 [INF] Executed action Loop.Controller.UserController.LoginUser (Loop) in 3.5044ms
+2025-11-25 05:43:18 [INF] Executed endpoint 'Loop.Controller.UserController.LoginUser (Loop)'
+2025-11-25 05:43:18 [INF] Request finished HTTP/1.1 POST http://localhost:8000/api/User/login application/json 48 - 401 - application/json;+charset=utf-8 5.6522ms
+2025-11-25 05:43:51 [INF] Request starting HTTP/1.1 POST http://localhost:8000/api/User application/json 84
+2025-11-25 05:43:51 [INF] CORS policy execution successful.
+2025-11-25 05:43:51 [INF] Executing endpoint 'Loop.Controller.UserController.CreateUser (Loop)'
+2025-11-25 05:43:51 [INF] Route matched with {action = "CreateUser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateUser(Loop.DTOs.Common.UserDTO) on controller Loop.Controller.UserController (Loop).
+2025-11-25 05:43:52 [INF] Executed DbCommand (1ms) [Parameters=[@__userDTO_Email_0='string'], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "User" AS u
+    WHERE u."Email" = @__userDTO_Email_0)
+2025-11-25 05:43:52 [INF] Executed DbCommand (9ms) [Parameters=[@p0='a4f34fbf-f49a-4b91-aab9-f91ff1e5786d', @p1=NULL (DbType = DateTime), @p2=NULL (DbType = DateTime), @p3='2025-11-25T05:43:52.2931429Z' (DbType = DateTime), @p4='string' (Nullable = false), @p5='Prueba' (Nullable = false), @p6='$2a$11$8GRosnJyPfXLyGMbhquQmuHRprUzD9okM60b/CdqJKnHSUjS9eh8K' (Nullable = false), @p7=NULL, @p8=NULL (DbType = DateTime), @p9='2025-11-25T05:43:52.2931706Z' (DbType = DateTime), @p10='0', @p11=NULL (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "User" ("Id", "CodeExpirationDate", "CodeRegisteredDate", "CreatedAt", "Email", "Name", "Password", "RefreshToken", "TokenExpirationDate", "UpdatedAt", "UserType", "VerificationCode")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+2025-11-25 05:43:52 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[<>f__AnonymousType14`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Loop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-25 05:43:52 [INF] Executed action Loop.Controller.UserController.CreateUser (Loop) in 546.1515ms
+2025-11-25 05:43:52 [INF] Executed endpoint 'Loop.Controller.UserController.CreateUser (Loop)'
+2025-11-25 05:43:52 [INF] Request finished HTTP/1.1 POST http://localhost:8000/api/User application/json 84 - 200 - application/json;+charset=utf-8 561.5635ms
+2025-11-25 05:45:36 [INF] Request starting HTTP/1.1 POST http://localhost:8000/api/User/login application/json 46
+2025-11-25 05:45:36 [INF] CORS policy execution successful.
+2025-11-25 05:45:36 [INF] Executing endpoint 'Loop.Controller.UserController.LoginUser (Loop)'
+2025-11-25 05:45:36 [INF] Route matched with {action = "LoginUser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginUser(Loop.DTOs.Common.LoginRequestDTO) on controller Loop.Controller.UserController (Loop).
+2025-11-25 05:45:36 [INF] Executed DbCommand (1ms) [Parameters=[@__loginDTO_Email_0='Admin'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."CodeExpirationDate", u."CodeRegisteredDate", u."CreatedAt", u."Email", u."Name", u."Password", u."RefreshToken", u."TokenExpirationDate", u."UpdatedAt", u."UserType", u."VerificationCode"
+FROM "User" AS u
+WHERE u."Email" = @__loginDTO_Email_0
+LIMIT 2
+2025-11-25 05:45:36 [WRN] Login fallido | Email: Admin | IP: ::ffff:172.18.0.1 | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 | Hora: "2025-11-25T05:45:36.8438281Z"
+2025-11-25 05:45:36 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-25 05:45:36 [INF] Executed action Loop.Controller.UserController.LoginUser (Loop) in 4.088ms
+2025-11-25 05:45:36 [INF] Executed endpoint 'Loop.Controller.UserController.LoginUser (Loop)'
+2025-11-25 05:45:36 [INF] Request finished HTTP/1.1 POST http://localhost:8000/api/User/login application/json 46 - 401 - application/json;+charset=utf-8 6.5745ms
+2025-11-25 05:45:37 [INF] Request starting HTTP/1.1 POST http://localhost:8000/api/User/login application/json 46
+2025-11-25 05:45:37 [INF] CORS policy execution successful.
+2025-11-25 05:45:37 [INF] Executing endpoint 'Loop.Controller.UserController.LoginUser (Loop)'
+2025-11-25 05:45:37 [INF] Route matched with {action = "LoginUser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginUser(Loop.DTOs.Common.LoginRequestDTO) on controller Loop.Controller.UserController (Loop).
+2025-11-25 05:45:37 [INF] Executed DbCommand (1ms) [Parameters=[@__loginDTO_Email_0='Admin'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."CodeExpirationDate", u."CodeRegisteredDate", u."CreatedAt", u."Email", u."Name", u."Password", u."RefreshToken", u."TokenExpirationDate", u."UpdatedAt", u."UserType", u."VerificationCode"
+FROM "User" AS u
+WHERE u."Email" = @__loginDTO_Email_0
+LIMIT 2
+2025-11-25 05:45:37 [WRN] Login fallido | Email: Admin | IP: ::ffff:172.18.0.1 | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 | Hora: "2025-11-25T05:45:37.8892971Z"
+2025-11-25 05:45:37 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-25 05:45:37 [INF] Executed action Loop.Controller.UserController.LoginUser (Loop) in 3.7376ms
+2025-11-25 05:45:37 [INF] Executed endpoint 'Loop.Controller.UserController.LoginUser (Loop)'
+2025-11-25 05:45:37 [INF] Request finished HTTP/1.1 POST http://localhost:8000/api/User/login application/json 46 - 401 - application/json;+charset=utf-8 7.1140ms
+2025-11-25 05:45:45 [INF] Request starting HTTP/1.1 POST http://localhost:8000/api/User/login application/json 46
+2025-11-25 05:45:45 [INF] CORS policy execution successful.
+2025-11-25 05:45:45 [INF] Executing endpoint 'Loop.Controller.UserController.LoginUser (Loop)'
+2025-11-25 05:45:45 [INF] Route matched with {action = "LoginUser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginUser(Loop.DTOs.Common.LoginRequestDTO) on controller Loop.Controller.UserController (Loop).
+2025-11-25 05:45:45 [INF] Executed DbCommand (1ms) [Parameters=[@__loginDTO_Email_0='admin'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."CodeExpirationDate", u."CodeRegisteredDate", u."CreatedAt", u."Email", u."Name", u."Password", u."RefreshToken", u."TokenExpirationDate", u."UpdatedAt", u."UserType", u."VerificationCode"
+FROM "User" AS u
+WHERE u."Email" = @__loginDTO_Email_0
+LIMIT 2
+2025-11-25 05:45:45 [INF] Login exitoso (pendiente de MFA) | Email: admin | IP: ::ffff:172.18.0.1 | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 | Hora: "2025-11-25T05:45:45.2967214Z"
+2025-11-25 05:45:45 [INF] Executed DbCommand (2ms) [Parameters=[@p11='7267d866-4506-4983-8143-1dbe25216700', @p0='2025-11-25T05:50:45.2973865Z' (Nullable = true) (DbType = DateTime), @p1='2025-11-25T05:45:45.2973569Z' (Nullable = true) (DbType = DateTime), @p2='2025-11-25T05:41:35.3771700Z' (DbType = DateTime), @p3='admin' (Nullable = false), @p4='Admin' (Nullable = false), @p5='$2a$11$8GRosnJyPfXLyGMbhquQmuHRprUzD9okM60b/CdqJKnHSUjS9eh8K' (Nullable = false), @p6=NULL, @p7=NULL (DbType = DateTime), @p8='2025-11-25T05:41:35.3771700Z' (DbType = DateTime), @p9='1', @p10='1052' (Nullable = true)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "User" SET "CodeExpirationDate" = @p0, "CodeRegisteredDate" = @p1, "CreatedAt" = @p2, "Email" = @p3, "Name" = @p4, "Password" = @p5, "RefreshToken" = @p6, "TokenExpirationDate" = @p7, "UpdatedAt" = @p8, "UserType" = @p9, "VerificationCode" = @p10
+WHERE "Id" = @p11;
+2025-11-25 05:45:45 [INF] Executed action Loop.Controller.UserController.LoginUser (Loop) in 178.2527ms
+2025-11-25 05:45:45 [INF] Executed endpoint 'Loop.Controller.UserController.LoginUser (Loop)'
+2025-11-25 05:45:45 [ERR] An unhandled exception has occurred while executing the request.
+System.FormatException: The specified string is not in the form required for an e-mail address.
+   at System.Net.Mail.MailAddressParser.TryReadCfwsAndThrowIfIncomplete(String data, Int32 index, Int32& outIndex, Boolean throwExceptionIfFail)
+   at System.Net.Mail.MailAddressParser.TryParseDomain(String data, Int32& index, String& domain, Boolean throwExceptionIfFail)
+   at System.Net.Mail.MailAddressParser.TryParseAddress(String data, Boolean expectMultipleAddresses, Int32& index, ParseAddressInfo& parseAddressInfo, Boolean throwExceptionIfFail)
+   at System.Net.Mail.MailAddressParser.ParseMultipleAddresses(String data)
+   at System.Net.Mail.MailAddressCollection.ParseValue(String addresses)
+   at Loop.Services.EmailService.SendEmailAsync(String toEmail, String subject, String body) in /src/Services/EmailService.cs:line 31
+   at Loop.Controller.UserController.LoginUser(LoginRequestDTO loginDTO) in /src/Controllers/UserController.cs:line 193
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-11-25 05:45:45 [INF] Request finished HTTP/1.1 POST http://localhost:8000/api/User/login application/json 46 - 500 - text/plain;+charset=utf-8 200.1797ms
+2025-11-25 05:48:04 [INF] Request starting HTTP/1.1 POST http://localhost:8000/api/User/login application/json 55
+2025-11-25 05:48:04 [INF] CORS policy execution successful.
+2025-11-25 05:48:04 [INF] Executing endpoint 'Loop.Controller.UserController.LoginUser (Loop)'
+2025-11-25 05:48:04 [INF] Route matched with {action = "LoginUser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginUser(Loop.DTOs.Common.LoginRequestDTO) on controller Loop.Controller.UserController (Loop).
+2025-11-25 05:48:04 [INF] Executed DbCommand (1ms) [Parameters=[@__loginDTO_Email_0='admin@test.com'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."CodeExpirationDate", u."CodeRegisteredDate", u."CreatedAt", u."Email", u."Name", u."Password", u."RefreshToken", u."TokenExpirationDate", u."UpdatedAt", u."UserType", u."VerificationCode"
+FROM "User" AS u
+WHERE u."Email" = @__loginDTO_Email_0
+LIMIT 2
+2025-11-25 05:48:04 [INF] Login exitoso (pendiente de MFA) | Email: admin@test.com | IP: ::ffff:172.18.0.1 | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 | Hora: "2025-11-25T05:48:04.7709422Z"
+2025-11-25 05:48:04 [INF] Executed DbCommand (2ms) [Parameters=[@p11='7267d866-4506-4983-8143-1dbe25216700', @p0='2025-11-25T05:53:04.7715422Z' (Nullable = true) (DbType = DateTime), @p1='2025-11-25T05:48:04.7715413Z' (Nullable = true) (DbType = DateTime), @p2='2025-11-25T05:41:35.3771700Z' (DbType = DateTime), @p3='admin@test.com' (Nullable = false), @p4='Admin' (Nullable = false), @p5='$2a$11$8GRosnJyPfXLyGMbhquQmuHRprUzD9okM60b/CdqJKnHSUjS9eh8K' (Nullable = false), @p6=NULL, @p7=NULL (DbType = DateTime), @p8='2025-11-25T05:41:35.3771700Z' (DbType = DateTime), @p9='1', @p10='5117' (Nullable = true)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "User" SET "CodeExpirationDate" = @p0, "CodeRegisteredDate" = @p1, "CreatedAt" = @p2, "Email" = @p3, "Name" = @p4, "Password" = @p5, "RefreshToken" = @p6, "TokenExpirationDate" = @p7, "UpdatedAt" = @p8, "UserType" = @p9, "VerificationCode" = @p10
+WHERE "Id" = @p11;
+2025-11-25 05:48:10 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[<>f__AnonymousType15`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Loop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-25 05:48:10 [INF] Executed action Loop.Controller.UserController.LoginUser (Loop) in 5415.5052ms
+2025-11-25 05:48:10 [INF] Executed endpoint 'Loop.Controller.UserController.LoginUser (Loop)'
+2025-11-25 05:48:10 [INF] Request finished HTTP/1.1 POST http://localhost:8000/api/User/login application/json 55 - 200 - application/json;+charset=utf-8 5418.2207ms
+2025-11-25 05:48:49 [INF] Request starting HTTP/1.1 POST http://localhost:8000/api/User/login application/json 67
+2025-11-25 05:48:49 [INF] CORS policy execution successful.
+2025-11-25 05:48:49 [INF] Executing endpoint 'Loop.Controller.UserController.LoginUser (Loop)'
+2025-11-25 05:48:49 [INF] Route matched with {action = "LoginUser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginUser(Loop.DTOs.Common.LoginRequestDTO) on controller Loop.Controller.UserController (Loop).
+2025-11-25 05:48:49 [INF] Executed DbCommand (1ms) [Parameters=[@__loginDTO_Email_0='20211953@aloe.ulima.edu.pe'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."CodeExpirationDate", u."CodeRegisteredDate", u."CreatedAt", u."Email", u."Name", u."Password", u."RefreshToken", u."TokenExpirationDate", u."UpdatedAt", u."UserType", u."VerificationCode"
+FROM "User" AS u
+WHERE u."Email" = @__loginDTO_Email_0
+LIMIT 2
+2025-11-25 05:48:49 [INF] Login exitoso (pendiente de MFA) | Email: 20211953@aloe.ulima.edu.pe | IP: ::ffff:172.18.0.1 | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 | Hora: "2025-11-25T05:48:49.9490310Z"
+2025-11-25 05:48:49 [INF] Executed DbCommand (2ms) [Parameters=[@p11='4a8f9d0c-2e11-4b71-b8f9-4674a2a1b94d', @p0='2025-11-25T05:53:49.9494907Z' (Nullable = true) (DbType = DateTime), @p1='2025-11-25T05:48:49.9494898Z' (Nullable = true) (DbType = DateTime), @p2='2025-11-25T05:41:35.3771700Z' (DbType = DateTime), @p3='20211953@aloe.ulima.edu.pe' (Nullable = false), @p4='Ryuichi Oshiro' (Nullable = false), @p5='$2a$11$8GRosnJyPfXLyGMbhquQmuHRprUzD9okM60b/CdqJKnHSUjS9eh8K' (Nullable = false), @p6=NULL, @p7=NULL (DbType = DateTime), @p8='2025-11-25T05:41:35.3771700Z' (DbType = DateTime), @p9='0', @p10='7020' (Nullable = true)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "User" SET "CodeExpirationDate" = @p0, "CodeRegisteredDate" = @p1, "CreatedAt" = @p2, "Email" = @p3, "Name" = @p4, "Password" = @p5, "RefreshToken" = @p6, "TokenExpirationDate" = @p7, "UpdatedAt" = @p8, "UserType" = @p9, "VerificationCode" = @p10
+WHERE "Id" = @p11;
+2025-11-25 05:48:52 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[<>f__AnonymousType15`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Loop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-25 05:48:52 [INF] Executed action Loop.Controller.UserController.LoginUser (Loop) in 2429.1844ms
+2025-11-25 05:48:52 [INF] Executed endpoint 'Loop.Controller.UserController.LoginUser (Loop)'
+2025-11-25 05:48:52 [INF] Request finished HTTP/1.1 POST http://localhost:8000/api/User/login application/json 67 - 200 - application/json;+charset=utf-8 2431.6221ms
+2025-11-25 05:49:33 [INF] Request starting HTTP/1.1 POST http://localhost:8000/api/User/mfa-verify application/json 59
+2025-11-25 05:49:33 [INF] CORS policy execution successful.
+2025-11-25 05:49:33 [INF] Executing endpoint 'Loop.Controller.UserController.VerifyMfaCode (Loop)'
+2025-11-25 05:49:33 [INF] Route matched with {action = "VerifyMfaCode", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] VerifyMfaCode(Loop.DTOs.Common.EmailVerificationDTO) on controller Loop.Controller.UserController (Loop).
+2025-11-25 05:49:33 [INF] Executed DbCommand (1ms) [Parameters=[@__dto_Email_0='20211953@aloe.ulima.edu.pe'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."CodeExpirationDate", u."CodeRegisteredDate", u."CreatedAt", u."Email", u."Name", u."Password", u."RefreshToken", u."TokenExpirationDate", u."UpdatedAt", u."UserType", u."VerificationCode"
+FROM "User" AS u
+WHERE u."Email" = @__dto_Email_0
+LIMIT 1
+2025-11-25 05:49:33 [INF] Executed DbCommand (2ms) [Parameters=[@p11='4a8f9d0c-2e11-4b71-b8f9-4674a2a1b94d', @p0=NULL (DbType = DateTime), @p1=NULL (DbType = DateTime), @p2='2025-11-25T05:41:35.3771700Z' (DbType = DateTime), @p3='20211953@aloe.ulima.edu.pe' (Nullable = false), @p4='Ryuichi Oshiro' (Nullable = false), @p5='$2a$11$8GRosnJyPfXLyGMbhquQmuHRprUzD9okM60b/CdqJKnHSUjS9eh8K' (Nullable = false), @p6='$2a$11$gEB/6dLy5v.rGyOVYFkrg.dM8Yf12HJs/KxARipKUni1lFDKp8236', @p7='2025-12-02T05:49:33.7962459Z' (Nullable = true) (DbType = DateTime), @p8='2025-11-25T05:41:35.3771700Z' (DbType = DateTime), @p9='0', @p10=NULL (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "User" SET "CodeExpirationDate" = @p0, "CodeRegisteredDate" = @p1, "CreatedAt" = @p2, "Email" = @p3, "Name" = @p4, "Password" = @p5, "RefreshToken" = @p6, "TokenExpirationDate" = @p7, "UpdatedAt" = @p8, "UserType" = @p9, "VerificationCode" = @p10
+WHERE "Id" = @p11;
+2025-11-25 05:49:33 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[<>f__AnonymousType18`3[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Loop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-25 05:49:33 [INF] Executed action Loop.Controller.UserController.VerifyMfaCode (Loop) in 164.3669ms
+2025-11-25 05:49:33 [INF] Executed endpoint 'Loop.Controller.UserController.VerifyMfaCode (Loop)'
+2025-11-25 05:49:33 [INF] Request finished HTTP/1.1 POST http://localhost:8000/api/User/mfa-verify application/json 59 - 200 - application/json;+charset=utf-8 170.7549ms
+2025-11-25 05:50:05 [INF] Request starting HTTP/1.1 GET http://localhost:8000/api/Customer - -
+2025-11-25 05:50:05 [INF] Executing endpoint 'Loop.Controller.CustomerController.GetCustomers (Loop)'
+2025-11-25 05:50:05 [INF] Route matched with {action = "GetCustomers", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCustomers() on controller Loop.Controller.CustomerController (Loop).
+2025-11-25 05:50:05 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Id", c."UserId"
+FROM "Customer" AS c
+ORDER BY c."Id"
+2025-11-25 05:50:05 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType6`2[[System.Guid, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Guid, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Loop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-25 05:50:05 [INF] Executed action Loop.Controller.CustomerController.GetCustomers (Loop) in 26.545ms
+2025-11-25 05:50:05 [INF] Executed endpoint 'Loop.Controller.CustomerController.GetCustomers (Loop)'
+2025-11-25 05:50:05 [INF] Request finished HTTP/1.1 GET http://localhost:8000/api/Customer - - - 200 - application/json;+charset=utf-8 61.3543ms
+2025-11-25 05:55:05 [INF] Application is shutting down...
+2025-11-25 05:55:07 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed.
+2025-11-25 05:55:07 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-11-25 05:55:07 [INF] Creating key {9ebe3e7f-c0b1-4c58-982b-aeb67ad70835} with creation date 2025-11-25 05:55:07Z, activation date 2025-11-25 05:55:07Z, and expiration date 2026-02-23 05:55:07Z.
+2025-11-25 05:55:07 [WRN] No XML encryptor configured. Key {9ebe3e7f-c0b1-4c58-982b-aeb67ad70835} may be persisted to storage in unencrypted form.
+2025-11-25 05:55:07 [INF] Writing data to file '/root/.aspnet/DataProtection-Keys/key-9ebe3e7f-c0b1-4c58-982b-aeb67ad70835.xml'.
+2025-11-25 05:55:07 [WRN] Overriding address(es) 'http://0.0.0.0:80'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-11-25 05:55:07 [INF] Now listening on: http://[::]:80
+2025-11-25 05:55:07 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-25 05:55:07 [INF] Hosting environment: Development
+2025-11-25 05:55:07 [INF] Content root path: /app
+2025-11-25 06:15:12 [INF] Application is shutting down...
+2025-11-25 06:15:14 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed.
+2025-11-25 06:15:14 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-11-25 06:15:14 [INF] Creating key {0f396573-94a3-4f4d-96e2-17f2b9c96de3} with creation date 2025-11-25 06:15:14Z, activation date 2025-11-25 06:15:14Z, and expiration date 2026-02-23 06:15:14Z.
+2025-11-25 06:15:14 [WRN] No XML encryptor configured. Key {0f396573-94a3-4f4d-96e2-17f2b9c96de3} may be persisted to storage in unencrypted form.
+2025-11-25 06:15:14 [INF] Writing data to file '/root/.aspnet/DataProtection-Keys/key-0f396573-94a3-4f4d-96e2-17f2b9c96de3.xml'.
+2025-11-25 06:15:14 [WRN] Overriding address(es) 'http://0.0.0.0:80'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-11-25 06:15:14 [INF] Now listening on: http://[::]:80
+2025-11-25 06:15:14 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-25 06:15:14 [INF] Hosting environment: Development
+2025-11-25 06:15:14 [INF] Content root path: /app
+2025-11-25 06:15:40 [INF] Request starting HTTP/1.1 POST http://localhost:8000/api/User/mfa-verify application/json 59
+2025-11-25 06:15:40 [INF] CORS policy execution successful.
+2025-11-25 06:15:40 [INF] Executing endpoint 'Loop.Controller.UserController.VerifyMfaCode (Loop)'
+2025-11-25 06:15:40 [INF] Route matched with {action = "VerifyMfaCode", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] VerifyMfaCode(Loop.DTOs.Common.EmailVerificationDTO) on controller Loop.Controller.UserController (Loop).
+2025-11-25 06:15:41 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-11-25 06:15:42 [INF] Executed DbCommand (26ms) [Parameters=[@__dto_Email_0='20211953@aloe.ulima.edu.pe'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."CodeExpirationDate", u."CodeRegisteredDate", u."CreatedAt", u."Email", u."Name", u."Password", u."RefreshToken", u."TokenExpirationDate", u."UpdatedAt", u."UserType", u."VerificationCode"
+FROM "User" AS u
+WHERE u."Email" = @__dto_Email_0
+LIMIT 1
+2025-11-25 06:15:42 [INF] Executed DbCommand (10ms) [Parameters=[@p11='4a8f9d0c-2e11-4b71-b8f9-4674a2a1b94d', @p0=NULL (DbType = DateTime), @p1=NULL (DbType = DateTime), @p2='2025-11-25T05:41:35.3771700Z' (DbType = DateTime), @p3='20211953@aloe.ulima.edu.pe' (Nullable = false), @p4='Ryuichi Oshiro' (Nullable = false), @p5='$2a$11$8GRosnJyPfXLyGMbhquQmuHRprUzD9okM60b/CdqJKnHSUjS9eh8K' (Nullable = false), @p6='$2a$11$v3pi7qOW.vPkc.cOJiypHOTsCaaRknpOrZimCWDNz.YfP2XZgAG5i', @p7='2025-12-02T06:15:42.4170399Z' (Nullable = true) (DbType = DateTime), @p8='2025-11-25T05:41:35.3771700Z' (DbType = DateTime), @p9='0', @p10=NULL (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "User" SET "CodeExpirationDate" = @p0, "CodeRegisteredDate" = @p1, "CreatedAt" = @p2, "Email" = @p3, "Name" = @p4, "Password" = @p5, "RefreshToken" = @p6, "TokenExpirationDate" = @p7, "UpdatedAt" = @p8, "UserType" = @p9, "VerificationCode" = @p10
+WHERE "Id" = @p11;
+2025-11-25 06:15:42 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[<>f__AnonymousType18`3[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Loop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-25 06:15:42 [INF] Executed action Loop.Controller.UserController.VerifyMfaCode (Loop) in 1577.8519ms
+2025-11-25 06:15:42 [INF] Executed endpoint 'Loop.Controller.UserController.VerifyMfaCode (Loop)'
+2025-11-25 06:15:42 [INF] Request finished HTTP/1.1 POST http://localhost:8000/api/User/mfa-verify application/json 59 - 200 - application/json;+charset=utf-8 1770.9211ms
+2025-11-25 07:12:29 [INF] Application is shutting down...
+2025-11-25 07:12:31 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed.
+2025-11-25 07:12:31 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-11-25 07:12:31 [INF] Creating key {e68759cf-ac88-41aa-b1be-f51cb0cab692} with creation date 2025-11-25 07:12:31Z, activation date 2025-11-25 07:12:31Z, and expiration date 2026-02-23 07:12:31Z.
+2025-11-25 07:12:31 [WRN] No XML encryptor configured. Key {e68759cf-ac88-41aa-b1be-f51cb0cab692} may be persisted to storage in unencrypted form.
+2025-11-25 07:12:31 [INF] Writing data to file '/root/.aspnet/DataProtection-Keys/key-e68759cf-ac88-41aa-b1be-f51cb0cab692.xml'.
+2025-11-25 07:12:31 [WRN] Overriding address(es) 'http://0.0.0.0:80'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-11-25 07:12:31 [INF] Now listening on: http://[::]:80
+2025-11-25 07:12:31 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-25 07:12:31 [INF] Hosting environment: Development
+2025-11-25 07:12:31 [INF] Content root path: /app
+2025-11-25 07:12:58 [INF] Request starting HTTP/1.1 GET http://localhost:8000/index.html - -
+2025-11-25 07:12:58 [INF] Request finished HTTP/1.1 GET http://localhost:8000/index.html - - - 200 - text/html;charset=utf-8 109.1284ms
+2025-11-25 07:12:59 [INF] Request starting HTTP/1.1 GET http://localhost:8000/swagger/v1/swagger.json - -
+2025-11-25 07:12:59 [INF] Request finished HTTP/1.1 GET http://localhost:8000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 91.2153ms
+2025-11-25 07:16:26 [INF] Request starting HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 47
+2025-11-25 07:16:26 [INF] CORS policy execution successful.
+2025-11-25 07:16:26 [INF] Executing endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 07:16:26 [INF] Route matched with {action = "AuthenticateWithFirebase", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AuthenticateWithFirebase(Loop.DTOs.Common.FirebaseTokenDTO) on controller Loop.Controller.UserController (Loop).
+2025-11-25 07:16:26 [ERR] Error durante la autenticación de Firebase.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Loop.Controller.UserController.AuthenticateWithFirebase(FirebaseTokenDTO tokenDTO) in /src/Controllers/UserController.cs:line 228
+2025-11-25 07:16:26 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType16`2[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-25 07:16:26 [INF] Executed action Loop.Controller.UserController.AuthenticateWithFirebase (Loop) in 139.9901ms
+2025-11-25 07:16:26 [INF] Executed endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 07:16:26 [INF] Request finished HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 47 - 401 - application/json;+charset=utf-8 197.1897ms
+2025-11-25 07:21:11 [INF] Request starting HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 940
+2025-11-25 07:21:11 [INF] CORS policy execution successful.
+2025-11-25 07:21:11 [INF] Executing endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 07:21:11 [INF] Route matched with {action = "AuthenticateWithFirebase", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AuthenticateWithFirebase(Loop.DTOs.Common.FirebaseTokenDTO) on controller Loop.Controller.UserController (Loop).
+2025-11-25 07:21:11 [ERR] Error durante la autenticación de Firebase.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Loop.Controller.UserController.AuthenticateWithFirebase(FirebaseTokenDTO tokenDTO) in /src/Controllers/UserController.cs:line 228
+2025-11-25 07:21:11 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType16`2[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-25 07:21:11 [INF] Executed action Loop.Controller.UserController.AuthenticateWithFirebase (Loop) in 15.3603ms
+2025-11-25 07:21:12 [INF] Executed endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 07:21:12 [INF] Request finished HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 940 - 401 - application/json;+charset=utf-8 27.5184ms
+2025-11-25 07:21:23 [INF] Request starting HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 940
+2025-11-25 07:21:23 [INF] CORS policy execution successful.
+2025-11-25 07:21:23 [INF] Executing endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 07:21:23 [INF] Route matched with {action = "AuthenticateWithFirebase", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AuthenticateWithFirebase(Loop.DTOs.Common.FirebaseTokenDTO) on controller Loop.Controller.UserController (Loop).
+2025-11-25 07:21:23 [ERR] Error durante la autenticación de Firebase.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Loop.Controller.UserController.AuthenticateWithFirebase(FirebaseTokenDTO tokenDTO) in /src/Controllers/UserController.cs:line 228
+2025-11-25 07:21:23 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType16`2[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-25 07:21:23 [INF] Executed action Loop.Controller.UserController.AuthenticateWithFirebase (Loop) in 40.9492ms
+2025-11-25 07:21:23 [INF] Executed endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 07:21:23 [INF] Request finished HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 940 - 401 - application/json;+charset=utf-8 47.3231ms
+2025-11-25 07:21:48 [INF] Request starting HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 1188
+2025-11-25 07:21:48 [INF] CORS policy execution successful.
+2025-11-25 07:21:48 [INF] Executing endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 07:21:48 [INF] Route matched with {action = "AuthenticateWithFirebase", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AuthenticateWithFirebase(Loop.DTOs.Common.FirebaseTokenDTO) on controller Loop.Controller.UserController (Loop).
+2025-11-25 07:21:48 [ERR] Error durante la autenticación de Firebase.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Loop.Controller.UserController.AuthenticateWithFirebase(FirebaseTokenDTO tokenDTO) in /src/Controllers/UserController.cs:line 228
+2025-11-25 07:21:48 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType16`2[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-25 07:21:48 [INF] Executed action Loop.Controller.UserController.AuthenticateWithFirebase (Loop) in 41.2773ms
+2025-11-25 07:21:48 [INF] Executed endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 07:21:48 [INF] Request finished HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 1188 - 401 - application/json;+charset=utf-8 43.4782ms
+2025-11-25 07:22:53 [INF] Request starting HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 1188
+2025-11-25 07:22:53 [INF] CORS policy execution successful.
+2025-11-25 07:22:53 [INF] Executing endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 07:22:53 [INF] Route matched with {action = "AuthenticateWithFirebase", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AuthenticateWithFirebase(Loop.DTOs.Common.FirebaseTokenDTO) on controller Loop.Controller.UserController (Loop).
+2025-11-25 07:22:53 [ERR] Error durante la autenticación de Firebase.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Loop.Controller.UserController.AuthenticateWithFirebase(FirebaseTokenDTO tokenDTO) in /src/Controllers/UserController.cs:line 228
+2025-11-25 07:22:53 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType16`2[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-25 07:22:53 [INF] Executed action Loop.Controller.UserController.AuthenticateWithFirebase (Loop) in 39.4408ms
+2025-11-25 07:22:53 [INF] Executed endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 07:22:53 [INF] Request finished HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 1188 - 401 - application/json;+charset=utf-8 41.6811ms
+2025-11-25 07:49:17 [INF] Application is shutting down...
+2025-11-25 07:49:19 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed.
+2025-11-25 07:49:19 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-11-25 07:49:19 [INF] Creating key {e45c6e35-6894-41f6-a487-0f2f2396fa6e} with creation date 2025-11-25 07:49:19Z, activation date 2025-11-25 07:49:19Z, and expiration date 2026-02-23 07:49:19Z.
+2025-11-25 07:49:19 [WRN] No XML encryptor configured. Key {e45c6e35-6894-41f6-a487-0f2f2396fa6e} may be persisted to storage in unencrypted form.
+2025-11-25 07:49:19 [INF] Writing data to file '/root/.aspnet/DataProtection-Keys/key-e45c6e35-6894-41f6-a487-0f2f2396fa6e.xml'.
+2025-11-25 07:49:19 [WRN] Overriding address(es) 'http://0.0.0.0:80'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-11-25 07:49:19 [INF] Now listening on: http://[::]:80
+2025-11-25 07:49:19 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-25 07:49:19 [INF] Hosting environment: Development
+2025-11-25 07:49:19 [INF] Content root path: /app
+2025-11-25 07:49:24 [INF] Request starting HTTP/1.1 GET http://localhost:8000/index.html - -
+2025-11-25 07:49:24 [INF] Request finished HTTP/1.1 GET http://localhost:8000/index.html - - - 200 - text/html;charset=utf-8 109.6345ms
+2025-11-25 07:49:24 [INF] Request starting HTTP/1.1 GET http://localhost:8000/swagger/v1/swagger.json - -
+2025-11-25 07:49:25 [INF] Request finished HTTP/1.1 GET http://localhost:8000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 101.4307ms
+2025-11-25 07:50:58 [INF] Request starting HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 1188
+2025-11-25 07:50:58 [INF] CORS policy execution successful.
+2025-11-25 07:50:58 [INF] Executing endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 07:50:58 [INF] Route matched with {action = "AuthenticateWithFirebase", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AuthenticateWithFirebase(Loop.DTOs.Common.FirebaseTokenDTO) on controller Loop.Controller.UserController (Loop).
+2025-11-25 07:50:58 [ERR] Error durante la autenticación de Firebase.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Loop.Controller.UserController.AuthenticateWithFirebase(FirebaseTokenDTO tokenDTO) in /src/Controllers/UserController.cs:line 183
+2025-11-25 07:50:58 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType15`2[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-25 07:50:58 [INF] Executed action Loop.Controller.UserController.AuthenticateWithFirebase (Loop) in 132.0994ms
+2025-11-25 07:50:58 [INF] Executed endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 07:50:58 [INF] Request finished HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 1188 - 401 - application/json;+charset=utf-8 189.6929ms
+2025-11-25 07:51:04 [INF] Request starting HTTP/1.1 GET http://localhost:8000/index.html - -
+2025-11-25 07:51:04 [INF] Request finished HTTP/1.1 GET http://localhost:8000/index.html - - - 200 - text/html;charset=utf-8 1.2992ms
+2025-11-25 07:51:04 [INF] Request starting HTTP/1.1 GET http://localhost:8000/swagger/v1/swagger.json - -
+2025-11-25 07:51:04 [INF] Request finished HTTP/1.1 GET http://localhost:8000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 11.7991ms
+2025-11-25 07:51:13 [INF] Request starting HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 1188
+2025-11-25 07:51:13 [INF] CORS policy execution successful.
+2025-11-25 07:51:13 [INF] Executing endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 07:51:13 [INF] Route matched with {action = "AuthenticateWithFirebase", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AuthenticateWithFirebase(Loop.DTOs.Common.FirebaseTokenDTO) on controller Loop.Controller.UserController (Loop).
+2025-11-25 07:51:13 [ERR] Error durante la autenticación de Firebase.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Loop.Controller.UserController.AuthenticateWithFirebase(FirebaseTokenDTO tokenDTO) in /src/Controllers/UserController.cs:line 183
+2025-11-25 07:51:13 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType15`2[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-25 07:51:13 [INF] Executed action Loop.Controller.UserController.AuthenticateWithFirebase (Loop) in 40.6ms
+2025-11-25 07:51:13 [INF] Executed endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 07:51:13 [INF] Request finished HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 1188 - 401 - application/json;+charset=utf-8 51.7669ms
+2025-11-25 07:53:45 [INF] Request starting HTTP/1.1 GET http://localhost:8000/api/User - -
+2025-11-25 07:53:45 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-11-25 07:53:45 [INF] AuthenticationScheme: Bearer was challenged.
+2025-11-25 07:53:45 [INF] Request finished HTTP/1.1 GET http://localhost:8000/api/User - - - 401 0 - 13.8638ms
+2025-11-25 07:56:28 [INF] Request starting HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 1188
+2025-11-25 07:56:28 [INF] CORS policy execution successful.
+2025-11-25 07:56:28 [INF] Executing endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 07:56:28 [INF] Route matched with {action = "AuthenticateWithFirebase", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AuthenticateWithFirebase(Loop.DTOs.Common.FirebaseTokenDTO) on controller Loop.Controller.UserController (Loop).
+2025-11-25 07:56:28 [ERR] Error durante la autenticación de Firebase.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Loop.Controller.UserController.AuthenticateWithFirebase(FirebaseTokenDTO tokenDTO) in /src/Controllers/UserController.cs:line 183
+2025-11-25 07:56:28 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType15`2[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-25 07:56:28 [INF] Executed action Loop.Controller.UserController.AuthenticateWithFirebase (Loop) in 4.0954ms
+2025-11-25 07:56:28 [INF] Executed endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 07:56:28 [INF] Request finished HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 1188 - 401 - application/json;+charset=utf-8 6.6827ms
+2025-11-25 08:01:37 [INF] Application is shutting down...
+2025-11-25 08:07:16 [ERR] Error al inicializar Firebase Admin SDK. Asegúrate de que las credenciales son válidas.
+System.AggregateException: One or more errors occurred. (The Application Default Credentials are not available. They are available if running in Google Compute Engine. Otherwise, the environment variable GOOGLE_APPLICATION_CREDENTIALS must be defined pointing to a file defining the credentials. See https://developers.google.com/accounts/docs/application-default-credentials for more information.)
+ ---> System.InvalidOperationException: The Application Default Credentials are not available. They are available if running in Google Compute Engine. Otherwise, the environment variable GOOGLE_APPLICATION_CREDENTIALS must be defined pointing to a file defining the credentials. See https://developers.google.com/accounts/docs/application-default-credentials for more information.
+   at Google.Apis.Auth.OAuth2.DefaultCredentialProvider.CreateDefaultCredentialAsync()
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Google.Apis.Auth.OAuth2.GoogleCredential.GetApplicationDefault()
+   at Program.<Main>$(String[] args) in /src/Program.cs:line 37
+2025-11-25 08:07:16 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed.
+2025-11-25 08:07:16 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-11-25 08:07:16 [INF] Creating key {726d1593-cb5b-415e-a338-56a244e6b21b} with creation date 2025-11-25 08:07:16Z, activation date 2025-11-25 08:07:16Z, and expiration date 2026-02-23 08:07:16Z.
+2025-11-25 08:07:16 [WRN] No XML encryptor configured. Key {726d1593-cb5b-415e-a338-56a244e6b21b} may be persisted to storage in unencrypted form.
+2025-11-25 08:07:16 [INF] Writing data to file '/root/.aspnet/DataProtection-Keys/key-726d1593-cb5b-415e-a338-56a244e6b21b.xml'.
+2025-11-25 08:07:16 [WRN] Overriding address(es) 'http://0.0.0.0:80'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-11-25 08:07:16 [INF] Now listening on: http://[::]:80
+2025-11-25 08:07:16 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-25 08:07:16 [INF] Hosting environment: Development
+2025-11-25 08:07:16 [INF] Content root path: /app
+2025-11-25 08:07:33 [INF] Request starting HTTP/1.1 GET http://localhost:8000/index.html - -
+2025-11-25 08:07:33 [INF] Request finished HTTP/1.1 GET http://localhost:8000/index.html - - - 200 - text/html;charset=utf-8 109.1443ms
+2025-11-25 08:07:33 [INF] Request starting HTTP/1.1 GET http://localhost:8000/swagger/v1/swagger.json - -
+2025-11-25 08:07:34 [INF] Request finished HTTP/1.1 GET http://localhost:8000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 260.5930ms
+2025-11-25 08:07:47 [INF] Request starting HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 1188
+2025-11-25 08:07:47 [INF] CORS policy execution successful.
+2025-11-25 08:07:47 [INF] Executing endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 08:07:47 [INF] Route matched with {action = "AuthenticateWithFirebase", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AuthenticateWithFirebase(Loop.DTOs.Common.FirebaseTokenDTO) on controller Loop.Controller.UserController (Loop).
+2025-11-25 08:07:47 [ERR] Error durante la autenticación de Firebase.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Loop.Controller.UserController.AuthenticateWithFirebase(FirebaseTokenDTO tokenDTO) in /src/Controllers/UserController.cs:line 183
+2025-11-25 08:07:47 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType15`2[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-25 08:07:47 [INF] Executed action Loop.Controller.UserController.AuthenticateWithFirebase (Loop) in 136.5546ms
+2025-11-25 08:07:47 [INF] Executed endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 08:07:47 [INF] Request finished HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 1188 - 401 - application/json;+charset=utf-8 194.7367ms
+2025-11-25 08:10:42 [INF] Application is shutting down...
+2025-11-25 08:10:43 [ERR] Error al inicializar Firebase Admin SDK. Asegúrate de que las credenciales son válidas.
+System.AggregateException: One or more errors occurred. (The Application Default Credentials are not available. They are available if running in Google Compute Engine. Otherwise, the environment variable GOOGLE_APPLICATION_CREDENTIALS must be defined pointing to a file defining the credentials. See https://developers.google.com/accounts/docs/application-default-credentials for more information.)
+ ---> System.InvalidOperationException: The Application Default Credentials are not available. They are available if running in Google Compute Engine. Otherwise, the environment variable GOOGLE_APPLICATION_CREDENTIALS must be defined pointing to a file defining the credentials. See https://developers.google.com/accounts/docs/application-default-credentials for more information.
+   at Google.Apis.Auth.OAuth2.DefaultCredentialProvider.CreateDefaultCredentialAsync()
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Google.Apis.Auth.OAuth2.GoogleCredential.GetApplicationDefault()
+   at Program.<Main>$(String[] args) in /src/Program.cs:line 37
+2025-11-25 08:10:44 [WRN] Faltan variables de entorno de Firebase. La autenticación de Firebase no funcionará.
+2025-11-25 08:10:44 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed.
+2025-11-25 08:10:44 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-11-25 08:10:44 [INF] Creating key {a2220aec-5c2a-4b33-84ea-e9f36f3b1d07} with creation date 2025-11-25 08:10:44Z, activation date 2025-11-25 08:10:44Z, and expiration date 2026-02-23 08:10:44Z.
+2025-11-25 08:10:44 [WRN] No XML encryptor configured. Key {a2220aec-5c2a-4b33-84ea-e9f36f3b1d07} may be persisted to storage in unencrypted form.
+2025-11-25 08:10:44 [INF] Writing data to file '/root/.aspnet/DataProtection-Keys/key-a2220aec-5c2a-4b33-84ea-e9f36f3b1d07.xml'.
+2025-11-25 08:10:44 [WRN] Overriding address(es) 'http://0.0.0.0:80'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-11-25 08:10:44 [INF] Now listening on: http://[::]:80
+2025-11-25 08:10:44 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-25 08:10:44 [INF] Hosting environment: Development
+2025-11-25 08:10:44 [INF] Content root path: /app
+2025-11-25 08:10:50 [INF] Request starting HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 1188
+2025-11-25 08:10:50 [INF] CORS policy execution successful.
+2025-11-25 08:10:50 [INF] Executing endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 08:10:50 [INF] Route matched with {action = "AuthenticateWithFirebase", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AuthenticateWithFirebase(Loop.DTOs.Common.FirebaseTokenDTO) on controller Loop.Controller.UserController (Loop).
+2025-11-25 08:10:50 [ERR] Error durante la autenticación de Firebase.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Loop.Controller.UserController.AuthenticateWithFirebase(FirebaseTokenDTO tokenDTO) in /src/Controllers/UserController.cs:line 183
+2025-11-25 08:10:50 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType15`2[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-25 08:10:50 [INF] Executed action Loop.Controller.UserController.AuthenticateWithFirebase (Loop) in 152.4224ms
+2025-11-25 08:10:50 [INF] Executed endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 08:10:50 [INF] Request finished HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 1188 - 401 - application/json;+charset=utf-8 242.6449ms
+2025-11-25 08:10:53 [INF] Request starting HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 1188
+2025-11-25 08:10:53 [INF] CORS policy execution successful.
+2025-11-25 08:10:53 [INF] Executing endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 08:10:53 [INF] Route matched with {action = "AuthenticateWithFirebase", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AuthenticateWithFirebase(Loop.DTOs.Common.FirebaseTokenDTO) on controller Loop.Controller.UserController (Loop).
+2025-11-25 08:10:53 [ERR] Error durante la autenticación de Firebase.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Loop.Controller.UserController.AuthenticateWithFirebase(FirebaseTokenDTO tokenDTO) in /src/Controllers/UserController.cs:line 183
+2025-11-25 08:10:53 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType15`2[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-25 08:10:53 [INF] Executed action Loop.Controller.UserController.AuthenticateWithFirebase (Loop) in 10.0469ms
+2025-11-25 08:10:53 [INF] Executed endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 08:10:53 [INF] Request finished HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 1188 - 401 - application/json;+charset=utf-8 22.9144ms
+2025-11-25 08:27:34 [INF] Request starting HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 924
+2025-11-25 08:27:34 [INF] CORS policy execution successful.
+2025-11-25 08:27:34 [INF] Executing endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 08:27:34 [INF] Route matched with {action = "AuthenticateWithFirebase", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AuthenticateWithFirebase(Loop.DTOs.Common.FirebaseTokenDTO) on controller Loop.Controller.UserController (Loop).
+2025-11-25 08:27:34 [ERR] Error durante la autenticación de Firebase.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Loop.Controller.UserController.AuthenticateWithFirebase(FirebaseTokenDTO tokenDTO) in /src/Controllers/UserController.cs:line 183
+2025-11-25 08:27:34 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType15`2[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-25 08:27:34 [INF] Executed action Loop.Controller.UserController.AuthenticateWithFirebase (Loop) in 4.3402ms
+2025-11-25 08:27:34 [INF] Executed endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 08:27:34 [INF] Request finished HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 924 - 401 - application/json;+charset=utf-8 12.5301ms
+2025-11-25 08:27:37 [INF] Request starting HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 924
+2025-11-25 08:27:37 [INF] CORS policy execution successful.
+2025-11-25 08:27:37 [INF] Executing endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 08:27:37 [INF] Route matched with {action = "AuthenticateWithFirebase", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AuthenticateWithFirebase(Loop.DTOs.Common.FirebaseTokenDTO) on controller Loop.Controller.UserController (Loop).
+2025-11-25 08:27:37 [ERR] Error durante la autenticación de Firebase.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Loop.Controller.UserController.AuthenticateWithFirebase(FirebaseTokenDTO tokenDTO) in /src/Controllers/UserController.cs:line 183
+2025-11-25 08:27:37 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType15`2[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-25 08:27:37 [INF] Executed action Loop.Controller.UserController.AuthenticateWithFirebase (Loop) in 45.9571ms
+2025-11-25 08:27:37 [INF] Executed endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 08:27:37 [INF] Request finished HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 924 - 401 - application/json;+charset=utf-8 50.2578ms
+2025-11-25 08:27:37 [INF] Request starting HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 924
+2025-11-25 08:27:37 [INF] CORS policy execution successful.
+2025-11-25 08:27:37 [INF] Executing endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 08:27:37 [INF] Route matched with {action = "AuthenticateWithFirebase", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AuthenticateWithFirebase(Loop.DTOs.Common.FirebaseTokenDTO) on controller Loop.Controller.UserController (Loop).
+2025-11-25 08:27:37 [ERR] Error durante la autenticación de Firebase.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Loop.Controller.UserController.AuthenticateWithFirebase(FirebaseTokenDTO tokenDTO) in /src/Controllers/UserController.cs:line 183
+2025-11-25 08:27:37 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType15`2[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-25 08:27:37 [INF] Executed action Loop.Controller.UserController.AuthenticateWithFirebase (Loop) in 40.2357ms
+2025-11-25 08:27:37 [INF] Executed endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 08:27:37 [INF] Request finished HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 924 - 401 - application/json;+charset=utf-8 42.3716ms
+2025-11-25 08:27:37 [INF] Request starting HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 924
+2025-11-25 08:27:37 [INF] CORS policy execution successful.
+2025-11-25 08:27:37 [INF] Executing endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 08:27:37 [INF] Route matched with {action = "AuthenticateWithFirebase", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AuthenticateWithFirebase(Loop.DTOs.Common.FirebaseTokenDTO) on controller Loop.Controller.UserController (Loop).
+2025-11-25 08:27:37 [ERR] Error durante la autenticación de Firebase.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Loop.Controller.UserController.AuthenticateWithFirebase(FirebaseTokenDTO tokenDTO) in /src/Controllers/UserController.cs:line 183
+2025-11-25 08:27:37 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType15`2[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-25 08:27:37 [INF] Executed action Loop.Controller.UserController.AuthenticateWithFirebase (Loop) in 43.3997ms
+2025-11-25 08:27:37 [INF] Executed endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 08:27:37 [INF] Request finished HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 924 - 401 - application/json;+charset=utf-8 45.8252ms
+2025-11-25 08:27:37 [INF] Request starting HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 924
+2025-11-25 08:27:37 [INF] CORS policy execution successful.
+2025-11-25 08:27:37 [INF] Executing endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 08:27:37 [INF] Route matched with {action = "AuthenticateWithFirebase", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AuthenticateWithFirebase(Loop.DTOs.Common.FirebaseTokenDTO) on controller Loop.Controller.UserController (Loop).
+2025-11-25 08:27:37 [ERR] Error durante la autenticación de Firebase.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Loop.Controller.UserController.AuthenticateWithFirebase(FirebaseTokenDTO tokenDTO) in /src/Controllers/UserController.cs:line 183
+2025-11-25 08:27:37 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType15`2[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-25 08:27:37 [INF] Executed action Loop.Controller.UserController.AuthenticateWithFirebase (Loop) in 43.0315ms
+2025-11-25 08:27:37 [INF] Executed endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 08:27:37 [INF] Request finished HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 924 - 401 - application/json;+charset=utf-8 45.2596ms
+2025-11-25 08:27:37 [INF] Request starting HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 924
+2025-11-25 08:27:37 [INF] CORS policy execution successful.
+2025-11-25 08:27:37 [INF] Executing endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 08:27:37 [INF] Route matched with {action = "AuthenticateWithFirebase", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AuthenticateWithFirebase(Loop.DTOs.Common.FirebaseTokenDTO) on controller Loop.Controller.UserController (Loop).
+2025-11-25 08:27:37 [ERR] Error durante la autenticación de Firebase.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Loop.Controller.UserController.AuthenticateWithFirebase(FirebaseTokenDTO tokenDTO) in /src/Controllers/UserController.cs:line 183
+2025-11-25 08:27:37 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType15`2[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-25 08:27:37 [INF] Executed action Loop.Controller.UserController.AuthenticateWithFirebase (Loop) in 40.4335ms
+2025-11-25 08:27:37 [INF] Executed endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 08:27:37 [INF] Request finished HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 924 - 401 - application/json;+charset=utf-8 42.4716ms
+2025-11-25 08:27:53 [INF] Request starting HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 223
+2025-11-25 08:27:53 [INF] CORS policy execution successful.
+2025-11-25 08:27:53 [INF] Executing endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 08:27:53 [INF] Route matched with {action = "AuthenticateWithFirebase", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AuthenticateWithFirebase(Loop.DTOs.Common.FirebaseTokenDTO) on controller Loop.Controller.UserController (Loop).
+2025-11-25 08:27:53 [ERR] Error durante la autenticación de Firebase.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Loop.Controller.UserController.AuthenticateWithFirebase(FirebaseTokenDTO tokenDTO) in /src/Controllers/UserController.cs:line 183
+2025-11-25 08:27:53 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType15`2[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-25 08:27:53 [INF] Executed action Loop.Controller.UserController.AuthenticateWithFirebase (Loop) in 4.842ms
+2025-11-25 08:27:53 [INF] Executed endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 08:27:53 [INF] Request finished HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 223 - 401 - application/json;+charset=utf-8 8.1332ms
+2025-11-25 08:29:14 [INF] Request starting HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 924
+2025-11-25 08:29:14 [INF] CORS policy execution successful.
+2025-11-25 08:29:14 [INF] Executing endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 08:29:14 [INF] Route matched with {action = "AuthenticateWithFirebase", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AuthenticateWithFirebase(Loop.DTOs.Common.FirebaseTokenDTO) on controller Loop.Controller.UserController (Loop).
+2025-11-25 08:29:14 [ERR] Error durante la autenticación de Firebase.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Loop.Controller.UserController.AuthenticateWithFirebase(FirebaseTokenDTO tokenDTO) in /src/Controllers/UserController.cs:line 183
+2025-11-25 08:29:14 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType15`2[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-25 08:29:14 [INF] Executed action Loop.Controller.UserController.AuthenticateWithFirebase (Loop) in 42.2113ms
+2025-11-25 08:29:14 [INF] Executed endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 08:29:14 [INF] Request finished HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 924 - 401 - application/json;+charset=utf-8 44.5105ms
+2025-11-25 08:33:18 [INF] Request starting HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 931
+2025-11-25 08:33:18 [INF] CORS policy execution successful.
+2025-11-25 08:33:18 [INF] Executing endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 08:33:18 [INF] Route matched with {action = "AuthenticateWithFirebase", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AuthenticateWithFirebase(Loop.DTOs.Common.FirebaseTokenDTO) on controller Loop.Controller.UserController (Loop).
+2025-11-25 08:33:18 [ERR] Error durante la autenticación de Firebase.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Loop.Controller.UserController.AuthenticateWithFirebase(FirebaseTokenDTO tokenDTO) in /src/Controllers/UserController.cs:line 183
+2025-11-25 08:33:18 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType15`2[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-25 08:33:18 [INF] Executed action Loop.Controller.UserController.AuthenticateWithFirebase (Loop) in 1.5372ms
+2025-11-25 08:33:18 [INF] Executed endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 08:33:18 [INF] Request finished HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 931 - 401 - application/json;+charset=utf-8 4.3596ms
+2025-11-25 08:33:40 [INF] Request starting HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 931
+2025-11-25 08:33:40 [INF] CORS policy execution successful.
+2025-11-25 08:33:40 [INF] Executing endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 08:33:40 [INF] Route matched with {action = "AuthenticateWithFirebase", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AuthenticateWithFirebase(Loop.DTOs.Common.FirebaseTokenDTO) on controller Loop.Controller.UserController (Loop).
+2025-11-25 08:33:40 [ERR] Error durante la autenticación de Firebase.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Loop.Controller.UserController.AuthenticateWithFirebase(FirebaseTokenDTO tokenDTO) in /src/Controllers/UserController.cs:line 183
+2025-11-25 08:33:40 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType15`2[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-25 08:33:40 [INF] Executed action Loop.Controller.UserController.AuthenticateWithFirebase (Loop) in 40.7012ms
+2025-11-25 08:33:40 [INF] Executed endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 08:33:40 [INF] Request finished HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 931 - 401 - application/json;+charset=utf-8 42.8468ms
+2025-11-25 08:37:36 [INF] Application is shutting down...
+2025-11-25 08:37:37 [WRN] Faltan variables de entorno de Firebase. La autenticación de Firebase no funcionará.
+2025-11-25 08:37:38 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed.
+2025-11-25 08:37:38 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-11-25 08:37:38 [INF] Creating key {398247a1-ca1b-4151-b179-107ddb16f5ab} with creation date 2025-11-25 08:37:38Z, activation date 2025-11-25 08:37:38Z, and expiration date 2026-02-23 08:37:38Z.
+2025-11-25 08:37:38 [WRN] No XML encryptor configured. Key {398247a1-ca1b-4151-b179-107ddb16f5ab} may be persisted to storage in unencrypted form.
+2025-11-25 08:37:38 [INF] Writing data to file '/root/.aspnet/DataProtection-Keys/key-398247a1-ca1b-4151-b179-107ddb16f5ab.xml'.
+2025-11-25 08:37:38 [WRN] Overriding address(es) 'http://0.0.0.0:80'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-11-25 08:37:38 [INF] Now listening on: http://[::]:80
+2025-11-25 08:37:38 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-25 08:37:38 [INF] Hosting environment: Development
+2025-11-25 08:37:38 [INF] Content root path: /app
+2025-11-25 08:37:53 [INF] Request starting HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 931
+2025-11-25 08:37:53 [INF] CORS policy execution successful.
+2025-11-25 08:37:53 [INF] Executing endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 08:37:53 [INF] Route matched with {action = "AuthenticateWithFirebase", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AuthenticateWithFirebase(Loop.DTOs.Common.FirebaseTokenDTO) on controller Loop.Controller.UserController (Loop).
+2025-11-25 08:37:53 [ERR] Error durante la autenticación de Firebase.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Loop.Controller.UserController.AuthenticateWithFirebase(FirebaseTokenDTO tokenDTO) in /src/Controllers/UserController.cs:line 183
+2025-11-25 08:37:53 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType15`2[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-25 08:37:53 [INF] Executed action Loop.Controller.UserController.AuthenticateWithFirebase (Loop) in 167.9961ms
+2025-11-25 08:37:53 [INF] Executed endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 08:37:53 [INF] Request finished HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 931 - 401 - application/json;+charset=utf-8 268.2020ms
+2025-11-25 08:38:02 [INF] Request starting HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 924
+2025-11-25 08:38:02 [INF] CORS policy execution successful.
+2025-11-25 08:38:02 [INF] Executing endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 08:38:02 [INF] Route matched with {action = "AuthenticateWithFirebase", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AuthenticateWithFirebase(Loop.DTOs.Common.FirebaseTokenDTO) on controller Loop.Controller.UserController (Loop).
+2025-11-25 08:38:02 [ERR] Error durante la autenticación de Firebase.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Loop.Controller.UserController.AuthenticateWithFirebase(FirebaseTokenDTO tokenDTO) in /src/Controllers/UserController.cs:line 183
+2025-11-25 08:38:02 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType15`2[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-25 08:38:02 [INF] Executed action Loop.Controller.UserController.AuthenticateWithFirebase (Loop) in 8.913ms
+2025-11-25 08:38:02 [INF] Executed endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 08:38:02 [INF] Request finished HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 924 - 401 - application/json;+charset=utf-8 17.2565ms
+2025-11-25 08:39:36 [INF] Request starting HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 924
+2025-11-25 08:39:36 [INF] CORS policy execution successful.
+2025-11-25 08:39:36 [INF] Executing endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 08:39:36 [INF] Route matched with {action = "AuthenticateWithFirebase", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AuthenticateWithFirebase(Loop.DTOs.Common.FirebaseTokenDTO) on controller Loop.Controller.UserController (Loop).
+2025-11-25 08:39:36 [ERR] Error durante la autenticación de Firebase.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Loop.Controller.UserController.AuthenticateWithFirebase(FirebaseTokenDTO tokenDTO) in /src/Controllers/UserController.cs:line 183
+2025-11-25 08:39:36 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType15`2[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-25 08:39:36 [INF] Executed action Loop.Controller.UserController.AuthenticateWithFirebase (Loop) in 42.0776ms
+2025-11-25 08:39:36 [INF] Executed endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 08:39:36 [INF] Request finished HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 924 - 401 - application/json;+charset=utf-8 49.8161ms
+2025-11-25 08:39:39 [INF] Request starting HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 924
+2025-11-25 08:39:39 [INF] CORS policy execution successful.
+2025-11-25 08:39:39 [INF] Executing endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 08:39:39 [INF] Route matched with {action = "AuthenticateWithFirebase", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AuthenticateWithFirebase(Loop.DTOs.Common.FirebaseTokenDTO) on controller Loop.Controller.UserController (Loop).
+2025-11-25 08:39:39 [ERR] Error durante la autenticación de Firebase.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Loop.Controller.UserController.AuthenticateWithFirebase(FirebaseTokenDTO tokenDTO) in /src/Controllers/UserController.cs:line 183
+2025-11-25 08:39:39 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType15`2[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-25 08:39:39 [INF] Executed action Loop.Controller.UserController.AuthenticateWithFirebase (Loop) in 39.8507ms
+2025-11-25 08:39:39 [INF] Executed endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 08:39:39 [INF] Request finished HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 924 - 401 - application/json;+charset=utf-8 42.6737ms
+2025-11-25 08:48:29 [INF] Application is shutting down...
+2025-11-25 08:48:30 [WRN] Faltan variables de entorno de Firebase. La autenticación de Firebase no funcionará.
+2025-11-25 08:48:30 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed.
+2025-11-25 08:48:30 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-11-25 08:48:30 [INF] Creating key {84d20bcf-fae1-440c-a1c9-feaf68b3d117} with creation date 2025-11-25 08:48:30Z, activation date 2025-11-25 08:48:30Z, and expiration date 2026-02-23 08:48:30Z.
+2025-11-25 08:48:31 [WRN] No XML encryptor configured. Key {84d20bcf-fae1-440c-a1c9-feaf68b3d117} may be persisted to storage in unencrypted form.
+2025-11-25 08:48:31 [INF] Writing data to file '/root/.aspnet/DataProtection-Keys/key-84d20bcf-fae1-440c-a1c9-feaf68b3d117.xml'.
+2025-11-25 08:48:31 [WRN] Overriding address(es) 'http://0.0.0.0:80'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-11-25 08:48:31 [INF] Now listening on: http://[::]:80
+2025-11-25 08:48:31 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-25 08:48:31 [INF] Hosting environment: Development
+2025-11-25 08:48:31 [INF] Content root path: /app
+2025-11-25 08:48:44 [INF] Request starting HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 924
+2025-11-25 08:48:44 [INF] CORS policy execution successful.
+2025-11-25 08:48:44 [INF] Executing endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 08:48:44 [INF] Route matched with {action = "AuthenticateWithFirebase", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AuthenticateWithFirebase(Loop.DTOs.Common.FirebaseTokenDTO) on controller Loop.Controller.UserController (Loop).
+2025-11-25 08:48:45 [ERR] Error durante la autenticación de Firebase.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Loop.Controller.UserController.AuthenticateWithFirebase(FirebaseTokenDTO tokenDTO) in /src/Controllers/UserController.cs:line 183
+2025-11-25 08:48:45 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType15`2[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-25 08:48:45 [INF] Executed action Loop.Controller.UserController.AuthenticateWithFirebase (Loop) in 163.4598ms
+2025-11-25 08:48:45 [INF] Executed endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 08:48:45 [INF] Request finished HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 924 - 401 - application/json;+charset=utf-8 255.5703ms
+2025-11-25 08:48:55 [INF] Request starting HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 931
+2025-11-25 08:48:55 [INF] CORS policy execution successful.
+2025-11-25 08:48:55 [INF] Executing endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 08:48:55 [INF] Route matched with {action = "AuthenticateWithFirebase", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AuthenticateWithFirebase(Loop.DTOs.Common.FirebaseTokenDTO) on controller Loop.Controller.UserController (Loop).
+2025-11-25 08:48:55 [ERR] Error durante la autenticación de Firebase.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Loop.Controller.UserController.AuthenticateWithFirebase(FirebaseTokenDTO tokenDTO) in /src/Controllers/UserController.cs:line 183
+2025-11-25 08:48:55 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType15`2[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-25 08:48:55 [INF] Executed action Loop.Controller.UserController.AuthenticateWithFirebase (Loop) in 10.2473ms
+2025-11-25 08:48:55 [INF] Executed endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 08:48:55 [INF] Request finished HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 931 - 401 - application/json;+charset=utf-8 19.4242ms
+2025-11-25 08:53:29 [INF] Application is shutting down...
+2025-11-25 08:53:31 [WRN] Faltan variables de entorno de Firebase. La autenticación de Firebase no funcionará.
+2025-11-25 08:53:31 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed.
+2025-11-25 08:53:31 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-11-25 08:53:31 [INF] Creating key {a9012503-f703-44fa-87d4-4c05a729b865} with creation date 2025-11-25 08:53:31Z, activation date 2025-11-25 08:53:31Z, and expiration date 2026-02-23 08:53:31Z.
+2025-11-25 08:53:31 [WRN] No XML encryptor configured. Key {a9012503-f703-44fa-87d4-4c05a729b865} may be persisted to storage in unencrypted form.
+2025-11-25 08:53:31 [INF] Writing data to file '/root/.aspnet/DataProtection-Keys/key-a9012503-f703-44fa-87d4-4c05a729b865.xml'.
+2025-11-25 08:53:31 [WRN] Overriding address(es) 'http://0.0.0.0:80'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-11-25 08:53:31 [INF] Now listening on: http://[::]:80
+2025-11-25 08:53:31 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-25 08:53:31 [INF] Hosting environment: Development
+2025-11-25 08:53:31 [INF] Content root path: /app
+2025-11-25 08:53:50 [INF] Request starting HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 924
+2025-11-25 08:53:50 [INF] CORS policy execution successful.
+2025-11-25 08:53:50 [INF] Executing endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 08:53:50 [INF] Route matched with {action = "AuthenticateWithFirebase", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AuthenticateWithFirebase(Loop.DTOs.Common.FirebaseTokenDTO) on controller Loop.Controller.UserController (Loop).
+2025-11-25 08:53:50 [ERR] Error durante la autenticación de Firebase.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Loop.Controller.UserController.AuthenticateWithFirebase(FirebaseTokenDTO tokenDTO) in /src/Controllers/UserController.cs:line 183
+2025-11-25 08:53:50 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType15`2[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-25 08:53:50 [INF] Executed action Loop.Controller.UserController.AuthenticateWithFirebase (Loop) in 174.6053ms
+2025-11-25 08:53:50 [INF] Executed endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 08:53:50 [INF] Request finished HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 924 - 401 - application/json;+charset=utf-8 271.3273ms
+2025-11-25 08:53:58 [INF] Request starting HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 932
+2025-11-25 08:53:58 [INF] CORS policy execution successful.
+2025-11-25 08:53:58 [INF] Executing endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 08:53:58 [INF] Route matched with {action = "AuthenticateWithFirebase", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AuthenticateWithFirebase(Loop.DTOs.Common.FirebaseTokenDTO) on controller Loop.Controller.UserController (Loop).
+2025-11-25 08:53:58 [ERR] Error durante la autenticación de Firebase.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Loop.Controller.UserController.AuthenticateWithFirebase(FirebaseTokenDTO tokenDTO) in /src/Controllers/UserController.cs:line 183
+2025-11-25 08:53:58 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType15`2[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-25 08:53:58 [INF] Executed action Loop.Controller.UserController.AuthenticateWithFirebase (Loop) in 10.5302ms
+2025-11-25 08:53:58 [INF] Executed endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 08:53:58 [INF] Request finished HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 932 - 401 - application/json;+charset=utf-8 21.8832ms
+2025-11-25 08:55:41 [INF] Application is shutting down...
+2025-11-25 08:55:43 [WRN] Faltan variables de entorno de Firebase. La autenticación de Firebase no funcionará.
+2025-11-25 08:55:43 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed.
+2025-11-25 08:55:43 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-11-25 08:55:43 [INF] Creating key {957d482b-d084-415d-8c71-c0f3156d581f} with creation date 2025-11-25 08:55:43Z, activation date 2025-11-25 08:55:43Z, and expiration date 2026-02-23 08:55:43Z.
+2025-11-25 08:55:43 [WRN] No XML encryptor configured. Key {957d482b-d084-415d-8c71-c0f3156d581f} may be persisted to storage in unencrypted form.
+2025-11-25 08:55:43 [INF] Writing data to file '/root/.aspnet/DataProtection-Keys/key-957d482b-d084-415d-8c71-c0f3156d581f.xml'.
+2025-11-25 08:55:43 [WRN] Overriding address(es) 'http://0.0.0.0:80'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-11-25 08:55:43 [INF] Now listening on: http://[::]:80
+2025-11-25 08:55:43 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-25 08:55:43 [INF] Hosting environment: Development
+2025-11-25 08:55:43 [INF] Content root path: /app
+2025-11-25 08:55:47 [INF] Request starting HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 932
+2025-11-25 08:55:47 [INF] CORS policy execution successful.
+2025-11-25 08:55:47 [INF] Executing endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 08:55:47 [INF] Route matched with {action = "AuthenticateWithFirebase", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AuthenticateWithFirebase(Loop.DTOs.Common.FirebaseTokenDTO) on controller Loop.Controller.UserController (Loop).
+2025-11-25 08:55:48 [ERR] Error durante la autenticación de Firebase.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Loop.Controller.UserController.AuthenticateWithFirebase(FirebaseTokenDTO tokenDTO) in /src/Controllers/UserController.cs:line 183
+2025-11-25 08:55:48 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType15`2[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-25 08:55:48 [INF] Executed action Loop.Controller.UserController.AuthenticateWithFirebase (Loop) in 169.5096ms
+2025-11-25 08:55:48 [INF] Executed endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 08:55:48 [INF] Request finished HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 932 - 401 - application/json;+charset=utf-8 265.5553ms
+2025-11-25 08:56:06 [INF] Request starting HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 924
+2025-11-25 08:56:06 [INF] CORS policy execution successful.
+2025-11-25 08:56:06 [INF] Executing endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 08:56:06 [INF] Route matched with {action = "AuthenticateWithFirebase", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AuthenticateWithFirebase(Loop.DTOs.Common.FirebaseTokenDTO) on controller Loop.Controller.UserController (Loop).
+2025-11-25 08:56:06 [ERR] Error durante la autenticación de Firebase.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Loop.Controller.UserController.AuthenticateWithFirebase(FirebaseTokenDTO tokenDTO) in /src/Controllers/UserController.cs:line 183
+2025-11-25 08:56:06 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType15`2[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-25 08:56:06 [INF] Executed action Loop.Controller.UserController.AuthenticateWithFirebase (Loop) in 11.5067ms
+2025-11-25 08:56:06 [INF] Executed endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 08:56:06 [INF] Request finished HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 924 - 401 - application/json;+charset=utf-8 23.2126ms
+2025-11-25 08:56:16 [INF] Request starting HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 931
+2025-11-25 08:56:16 [INF] CORS policy execution successful.
+2025-11-25 08:56:16 [INF] Executing endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 08:56:16 [INF] Route matched with {action = "AuthenticateWithFirebase", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AuthenticateWithFirebase(Loop.DTOs.Common.FirebaseTokenDTO) on controller Loop.Controller.UserController (Loop).
+2025-11-25 08:56:16 [ERR] Error durante la autenticación de Firebase.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Loop.Controller.UserController.AuthenticateWithFirebase(FirebaseTokenDTO tokenDTO) in /src/Controllers/UserController.cs:line 183
+2025-11-25 08:56:16 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType15`2[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-25 08:56:16 [INF] Executed action Loop.Controller.UserController.AuthenticateWithFirebase (Loop) in 41.5595ms
+2025-11-25 08:56:16 [INF] Executed endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 08:56:16 [INF] Request finished HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 931 - 401 - application/json;+charset=utf-8 48.9848ms
+2025-11-25 08:56:22 [INF] Request starting HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 924
+2025-11-25 08:56:22 [INF] CORS policy execution successful.
+2025-11-25 08:56:22 [INF] Executing endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 08:56:22 [INF] Route matched with {action = "AuthenticateWithFirebase", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AuthenticateWithFirebase(Loop.DTOs.Common.FirebaseTokenDTO) on controller Loop.Controller.UserController (Loop).
+2025-11-25 08:56:22 [ERR] Error durante la autenticación de Firebase.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Loop.Controller.UserController.AuthenticateWithFirebase(FirebaseTokenDTO tokenDTO) in /src/Controllers/UserController.cs:line 183
+2025-11-25 08:56:22 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType15`2[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-25 08:56:22 [INF] Executed action Loop.Controller.UserController.AuthenticateWithFirebase (Loop) in 42.6535ms
+2025-11-25 08:56:22 [INF] Executed endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 08:56:22 [INF] Request finished HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 924 - 401 - application/json;+charset=utf-8 45.0939ms
+2025-11-25 08:58:07 [INF] Application is shutting down...
+2025-11-25 08:58:08 [INF] Firebase Admin SDK inicializado correctamente usando credenciales de .env.
+2025-11-25 08:58:09 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed.
+2025-11-25 08:58:09 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-11-25 08:58:09 [INF] Creating key {d00517d5-e0de-4e3b-86a8-c58ae18ef106} with creation date 2025-11-25 08:58:09Z, activation date 2025-11-25 08:58:09Z, and expiration date 2026-02-23 08:58:09Z.
+2025-11-25 08:58:09 [WRN] No XML encryptor configured. Key {d00517d5-e0de-4e3b-86a8-c58ae18ef106} may be persisted to storage in unencrypted form.
+2025-11-25 08:58:09 [INF] Writing data to file '/root/.aspnet/DataProtection-Keys/key-d00517d5-e0de-4e3b-86a8-c58ae18ef106.xml'.
+2025-11-25 08:58:09 [WRN] Overriding address(es) 'http://0.0.0.0:80'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-11-25 08:58:09 [INF] Now listening on: http://[::]:80
+2025-11-25 08:58:09 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-25 08:58:09 [INF] Hosting environment: Development
+2025-11-25 08:58:09 [INF] Content root path: /app
+2025-11-25 08:58:13 [INF] Request starting HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 924
+2025-11-25 08:58:13 [INF] CORS policy execution successful.
+2025-11-25 08:58:13 [INF] Executing endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 08:58:13 [INF] Route matched with {action = "AuthenticateWithFirebase", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AuthenticateWithFirebase(Loop.DTOs.Common.FirebaseTokenDTO) on controller Loop.Controller.UserController (Loop).
+2025-11-25 08:58:15 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-11-25 08:58:16 [INF] Executed DbCommand (30ms) [Parameters=[@__email_0='test123@email.com'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."CreatedAt", u."Email", u."Name", u."RefreshToken", u."TokenExpirationDate", u."UpdatedAt", u."UserType"
+FROM "User" AS u
+WHERE u."Email" = @__email_0
+LIMIT 1
+2025-11-25 08:58:16 [INF] Executed DbCommand (11ms) [Parameters=[@p0='adbc1d99-560a-41e9-a113-d0bf165d1d7b', @p1='2025-11-25T08:58:16.1289525Z' (DbType = DateTime), @p2='test123@email.com' (Nullable = false), @p3='Usuario Firebase' (Nullable = false), @p4=NULL, @p5=NULL (DbType = DateTime), @p6='2025-11-25T08:58:16.1289700Z' (DbType = DateTime), @p7='0'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "User" ("Id", "CreatedAt", "Email", "Name", "RefreshToken", "TokenExpirationDate", "UpdatedAt", "UserType")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2025-11-25 08:58:16 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[<>f__AnonymousType16`3[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Guid, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Loop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-25 08:58:16 [INF] Executed action Loop.Controller.UserController.AuthenticateWithFirebase (Loop) in 2470.6566ms
+2025-11-25 08:58:16 [INF] Executed endpoint 'Loop.Controller.UserController.AuthenticateWithFirebase (Loop)'
+2025-11-25 08:58:16 [INF] Request finished HTTP/1.1 POST http://localhost:8000/api/User/firebase-auth application/json 924 - 200 - application/json;+charset=utf-8 2575.0861ms
