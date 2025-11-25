@@ -15,7 +15,7 @@ services:
       FIREBASE_PRIVATE_KEY: ${FIREBASE_PRIVATE_KEY}
       
       # 🚩 Usar la variable de la contraseña de la DB para la cadena de conexión
-      ConnectionStrings__DefaultConnection: "Host=dpg-d4in34shg0os73a25940-a.oregon-postgres.render.com;Database=loop_db_5eo6;Username=loop;Password=jB5x5grx0csPwY1fFvds68tDqSK0IRG7"
+      CONNECTION_STRING: "Host=dpg-d4in34shg0os73a25940-a.oregon-postgres.render.com;Database=loop_db_5eo6;Username=loop;Password=jB5x5grx0csPwY1fFvds68tDqSK0IRG7"
     volumes:
       - ./logs:/app/Logs
 
