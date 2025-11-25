@@ -84,10 +84,11 @@ builder.Services.AddControllers().AddJsonOptions(x =>
     x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
 
 // PostgreSQL con EF Core
-var connStr = Environment.GetEnvironmentVariable("CONNECTION_STRING");
+var connStr = Environment.GetEnvironmentVariable("ConnectionStrings__DefaultConnection");
+
 if (string.IsNullOrEmpty(connStr))
 {
-    Log.Error("No se encontró CONNECTION_STRING en las variables de entorno.");
+    Log.Error("No se encontró la variable CONNECTION_STRING");
 }
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
