@@ -7,11 +7,10 @@ using Microsoft.OpenApi.Models;
 using Serilog;
 using Loop.Data;
 using Loop.Services;
-using FirebaseAdmin; 
+using FirebaseAdmin;
 using Google.Apis.Auth.OAuth2;
-using Google.Apis.Auth.OAuth2.Responses;
 
-// Cargar variables de entorno (.env y .secrets.env para las credenciales de Firebase)
+// Cargar variables de entorno
 DotNetEnv.Env.Load();
 if (File.Exists(".secrets.env"))
 {
@@ -35,66 +34,43 @@ Log.Logger = new LoggerConfiguration()
 
 var builder = WebApplication.CreateBuilder(args);
 
-// 🔑 Configurar y Inicializar Firebase Admin SDK (MODIFICACIÓN CLAVE)
+// 🔥 Inicializar Firebase usando SOLO UNA variable de entorno
 try
 {
-    // 1. Obtener las credenciales de las variables de entorno
-    var projectId = Environment.GetEnvironmentVariable("FIREBASE_PROJECT_ID");
-    var privateKey = Environment.GetEnvironmentVariable("FIREBASE_PRIVATE_KEY");
-    var clientEmail = Environment.GetEnvironmentVariable("FIREBASE_CLIENT_EMAIL");
+    var jsonCredentials = Environment.GetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS_JSON");
 
-    if (string.IsNullOrEmpty(projectId) || string.IsNullOrEmpty(privateKey) || string.IsNullOrEmpty(clientEmail))
+    if (string.IsNullOrEmpty(jsonCredentials))
     {
-        Log.Warning("Faltan variables de entorno de Firebase. La autenticación de Firebase no funcionará.");
+        Log.Warning("No se encontró GOOGLE_APPLICATION_CREDENTIALS_JSON. Firebase no se inicializará.");
     }
     else
     {
-        // 2. Crear un objeto de configuración que simule el archivo JSON
-        var config = new Dictionary<string, object>
-        {
-            { "type", "service_account" },
-            { "project_id", projectId },
-            { "private_key_id", Environment.GetEnvironmentVariable("FIREBASE_PRIVATE_KEY_ID") },
-            // Reemplaza los saltos de línea codificados (\n) para que sean interpretados correctamente
-            { "private_key", privateKey}, 
-            { "client_email", clientEmail },
-            { "token_uri", "https://oauth2.googleapis.com/token" }
-            // Puedes añadir otros campos si son necesarios, pero estos son los principales
-        };
-
-        // 3. Serializar la configuración en JSON
-        var jsonConfig = System.Text.Json.JsonSerializer.Serialize(config);
-        
-        // 4. Crear las credenciales a partir del JSON en memoria
-        var credential = GoogleCredential.FromJson(jsonConfig);
-
-        // 5. Inicializar Firebase
         if (FirebaseApp.DefaultInstance == null)
         {
             FirebaseApp.Create(new AppOptions()
             {
-                Credential = credential,
-                ProjectId = projectId // Opcional, pero bueno para la configuración explícita
+                Credential = GoogleCredential.FromJson(jsonCredentials)
             });
-            Log.Information("Firebase Admin SDK inicializado correctamente usando credenciales de .env.");
+
+            Log.Information("Firebase Admin SDK inicializado correctamente desde GOOGLE_APPLICATION_CREDENTIALS_JSON.");
         }
     }
 }
 catch (Exception ex)
 {
-    Log.Error(ex, "Error al inicializar Firebase Admin SDK desde .env.");
+    Log.Error(ex, "Error al inicializar Firebase Admin SDK.");
 }
 
-// 🪵 Usar Serilog como proveedor de logging
+// 🪵 Usar Serilog
 builder.Host.UseSerilog();
 
-// Configurar Kestrel para Docker
+// Configurar Kestrel para Render
 builder.WebHost.ConfigureKestrel(options =>
 {
-    options.ListenAnyIP(int.Parse(Environment.GetEnvironmentVariable("PORT") ?? "8080")); // escucha en todas las IPs
+    options.ListenAnyIP(int.Parse(Environment.GetEnvironmentVariable("PORT") ?? "8080"));
 });
 
-// CORS: permitir cualquier origen, header y método (para desarrollo)
+// CORS
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowSpecificOrigin",
@@ -103,20 +79,20 @@ builder.Services.AddCors(options =>
                         .AllowAnyMethod());
 });
 
-// Configurar Controllers y evitar ciclos de referencia JSON
+// Controllers
 builder.Services.AddControllers().AddJsonOptions(x =>
     x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
 
-// Configurar PostgreSQL con EF Core
+// PostgreSQL con EF Core
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseNpgsql(
         builder.Configuration.GetConnectionString(Environment.GetEnvironmentVariable("CONNECTION_STRING"))
     )
-    .EnableSensitiveDataLogging() // logs detallados para debugging
+    .EnableSensitiveDataLogging()
     .LogTo(Console.WriteLine)
 );
 
-// 🔐 Configurar JWT Authentication
+// 🔐 JWT
 var key = Encoding.ASCII.GetBytes(builder.Configuration["Jwt:Key"]);
 builder.Services.AddAuthentication(options =>
 {
@@ -137,7 +113,7 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
-// 🔹 Configurar Swagger con JWT
+// 🔹 Swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
@@ -169,46 +145,42 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
-// Configuración de EmailService
+// Email Service
 builder.Services.Configure<EmailSettings>(
     builder.Configuration.GetSection("EmailSettings"));
 builder.Services.AddTransient<EmailService>();
 
+// Product Service HTTP Client
 builder.Services.AddHttpClient("ProductService", client =>
 {
-    // client.BaseAddress usará la variable PRODUCT_SERVICE_URL definida en docker-compose
     client.BaseAddress = new Uri(builder.Configuration["PRODUCT_SERVICE_URL"]!);
 });
 
 var app = builder.Build();
 
-// Configurar URL (para Docker)
+// APP URL (Docker/Render)
 var appUrl = Environment.GetEnvironmentVariable("APP_URL");
 if (!string.IsNullOrEmpty(appUrl))
 {
     app.Urls.Add(appUrl);
 }
 
-// Middleware pipeline
+// Middleware
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI(options =>
     {
         options.SwaggerEndpoint("/swagger/v1/swagger.json", "Loop API v1");
-        options.RoutePrefix = string.Empty; // Swagger en /
+        options.RoutePrefix = string.Empty;
     });
 }
 
-// CORS
 app.UseCors("AllowSpecificOrigin");
 
-// Autenticación / Autorización
 app.UseAuthentication();
 app.UseAuthorization();
 
-// Mapear Controllers
 app.MapControllers();
 
-// Ejecutar aplicación
 app.Run();
