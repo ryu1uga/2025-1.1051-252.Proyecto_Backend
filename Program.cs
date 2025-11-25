@@ -91,7 +91,7 @@ builder.Host.UseSerilog();
 // Configurar Kestrel para Docker
 builder.WebHost.ConfigureKestrel(options =>
 {
-    options.ListenAnyIP(80); // escucha en todas las IPs
+    options.ListenAnyIP(int.Parse(Environment.GetEnvironmentVariable("PORT") ?? "8080")); // escucha en todas las IPs
 });
 
 // CORS: permitir cualquier origen, header y método (para desarrollo)

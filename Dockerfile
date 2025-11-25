@@ -1,7 +1,7 @@
 # Use the official ASP.NET Core runtime as a parent image
 FROM mcr.microsoft.com/dotnet/aspnet:7.0 AS base
 WORKDIR /app
-EXPOSE 80
+EXPOSE $PORT
 
 #ENV ASPNETCORE_HTTP_PORTS 8080
 
@@ -23,4 +23,4 @@ RUN dotnet publish "Loop.csproj" -c $BUILD_CONFIGURATION -o /app/publish
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "Loop.dll", "--environment=Development"]
+ENTRYPOINT ["dotnet", "Loop.dll", "--environment=Production"]
