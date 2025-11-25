@@ -45,8 +45,6 @@ try
     }
     else
     {
-        jsonCredentials = jsonCredentials.Replace("\\n", "\n");
-        
         if (FirebaseApp.DefaultInstance == null)
         {
             FirebaseApp.Create(new AppOptions()
