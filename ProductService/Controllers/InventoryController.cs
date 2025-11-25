@@ -13,7 +13,6 @@ namespace Loop.Controller
 {
     [ApiController]
     [Route("api/[controller]")]
-    [Authorize]
     public class InventoryController : ControllerBase
     {
         private readonly ProductDbContext _context;
