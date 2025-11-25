@@ -1,8 +1,1 @@
-POST https://two025-1-1051-252-proyecto-backend.onrender.com/api/ProductImage
-Content-Type: application/json
-
-{
-  "productId": "a6a54e56-7c0a-4628-bb99-21b20b41c50b",
-  "url": "https://example.com/imagen.jpg",
-  "order": 1
-}
+GET https://two025-1-1051-252-proyecto-backend.onrender.com/api/ProductImage
