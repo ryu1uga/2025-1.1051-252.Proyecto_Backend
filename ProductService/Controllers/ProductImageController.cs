@@ -33,7 +33,7 @@ namespace Loop.Controller
                     pi.Id,
                     pi.ProductId,
                     pi.Url,
-                    pi.Order
+                    pi.ImageOrder
                 })
                 .ToListAsync();
 
@@ -55,7 +55,7 @@ namespace Loop.Controller
                     pi.Id,
                     pi.ProductId,
                     pi.Url,
-                    pi.Order
+                    pi.ImageOrder
                 })
                 .FirstOrDefaultAsync();
 
@@ -82,7 +82,7 @@ namespace Loop.Controller
                 Id = Guid.NewGuid(),
                 ProductId = productImageDTO.ProductId,
                 Url = productImageDTO.Url,
-                Order = productImageDTO.Order,
+                ImageOrder = productImageDTO.ImageOrder,
                 CreatedAt = DateTime.UtcNow,
                 UpdatedAt = DateTime.UtcNow
             };
@@ -113,7 +113,7 @@ namespace Loop.Controller
             }
 
             productImage.Url = productImageDTO.Url;
-            productImage.Order = productImageDTO.Order;
+            productImage.ImageOrder = productImageDTO.ImageOrder;
             productImage.UpdatedAt = DateTime.UtcNow;
 
             _context.ProductImages.Update(productImage);

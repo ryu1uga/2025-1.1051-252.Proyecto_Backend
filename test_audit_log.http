@@ -1,0 +1,7 @@
+@baseUrl = https://loop-backend-render.onrender.com
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI3NjA3NDhhYi0zYmY5LTQxNGItYjI1YS05Yzk3NjY3NDlhODgiLCJ1bmlxdWVfbmFtZSI6IlVzdWFyaW8gRmlyZWJhc2UiLCJlbWFpbCI6InRlc3QxMjNAZW1haWwuY29tIiwibmJmIjoxNzY0NjUzMjA5LCJleHAiOjE3NjQ2NzEyMDksImlhdCI6MTc2NDY1MzIwOX0.Wr3QagSwtcxdRTMB90ySjFZfLJ6WosfJ47h6LXwNHl4
+
+### Agregar item al carrito
+GET {{baseUrl}}/api/User/audit-logs
+Authorization: Bearer {{token}}
+Content-Type: application/json

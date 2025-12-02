@@ -50,7 +50,7 @@ CREATE TABLE public."ProductImage" (
     "Id" uuid NOT NULL,
     "ProductId" uuid NOT NULL,
     "Url" varchar NOT NULL,
-    "Order" integer NOT NULL,
+    "ImageOrder" integer NOT NULL,
     "CreatedAt" timestamp with time zone NOT NULL,
     "UpdatedAt" timestamp with time zone NOT NULL
 );

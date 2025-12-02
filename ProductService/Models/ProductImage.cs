@@ -8,7 +8,7 @@ namespace Loop.Models.Common
         public Guid Id { get; set; } = Guid.NewGuid();
         public Guid ProductId { get; set; }
         public string Url { get; set; } = "";
-        public int Order { get; set; } = 0;
+        public int ImageOrder { get; set; } = 0;
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
 
