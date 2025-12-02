@@ -207,8 +207,8 @@
                 });
             }
 
-            // DELETE: api/Products
-            [HttpDelete]
+            // DELETE: api/Products/{id}
+            [HttpDelete("{id}")]
             public async Task<IActionResult> DeleteProduct(Guid id)
             {
                 var product = await _context.Products
