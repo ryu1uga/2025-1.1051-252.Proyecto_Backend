@@ -41,7 +41,7 @@
                         {
                             img.Id,
                             img.Url,
-                            img.Order
+                            img.ImageOrder
                         }).ToList()
                     })
                     .ToListAsync();
@@ -72,7 +72,7 @@
                         {
                             img.Id,
                             img.Url,
-                            img.Order
+                            img.ImageOrder
                         }).ToList()
                     })
                     .FirstOrDefaultAsync();
@@ -137,7 +137,7 @@
                         {
                             img.Id,
                             img.Url,
-                            img.Order
+                            img.ImageOrder
                         }).ToList()
                     })
                     .ToListAsync();
